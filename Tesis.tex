@@ -1,0 +1,79 @@
+%------------------------------------------------------------------------------
+% Tesis de Maestria en Electrica.
+%------------------------------------------------------------------------------
+
+\documentclass[twoadviser,master]{labicetesis}
+
+%%%%%%%%%%%%%%%%    Definicin de directorios de trabajo   %%%%%%%%%%%%%%%%%%%%
+
+
+\newcommand{\DirFigP}{./Figures/Portada}
+\newcommand{\DirFigA}{./Figures/Agradec}
+\newcommand{\DirFigCuno}{./Figures/Capitulo1}
+\newcommand{\DirFigCdos}{./Figures/Capitulo2}
+\newcommand{\DirFigCtres}{./Figures/Capitulo3}
+\newcommand{\DirFigCcuatro}{./Figures/Capitulo4}
+\newcommand{\DirFigCcinco}{./Figures/Capitulo5}
+\newcommand{\DirFigAa}{./Figures/ApendiceA}
+\newcommand{\Ima}{./Pictures}
+\newcommand{\figRef}[1]{\textbf{Figure} \ref{#1}}
+\renewcommand{\citepunct}{; }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%    Datos personales    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Diferential and double differential cross section of one pion production for CC neutrino interactions in the MINERvA's Tracker}		% Titulo del documento.
+\author{Everardo Granados V\'azquez}				% Autor del documento.
+\date{December, 2023}									% Fecha de publicacin.
+\crest{\DirFigP/EscudoAltaCalidadjpgUG.eps}				% Escudo de la Universidad
+\grade{DOCTORADO EN F\'ISICA }			% Grado o Titulo
+\adviser{Dr. Juli\'an F\'elix}{Dra. Laura Fields}	%Asesor(es)
+\bars{\DirFigP/porta3}									%Barras
+
+\hyphenation{}
+\clubpenalty=10000
+\widowpenalty=10000
+
+%==============================================================================
+%==============================================================================
+\begin{document}                        % Empieza el documento
+% \bibliography{url}
+ \pagenumbering{roman}
+	\maketitle			% Portada
+	\formatLabice			% Diseño de la hoja y Formato de tesis
+	\input{./Chapters/agradecimientos2}   % Agradecimientos Institucionales.
+	\input{./Chapters/agradecimientos1}   % Agradecimientos.
+	\input{./Chapters/prologo}			  % Prologo
+
+	\dominitoc
+	\tableofcontents                      % Índice general
+	\listoffigures                        % Índice de figuras
+	\listoftables                         % Índice de tablas
+	\newpage
+
+
+%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& &&&&&&&&&&&&&&&
+%       Capitulos
+%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+	\pagenumbering{arabic}
+	\parskip = 0.5cm			%espacio entre parrafos
+	\input{./Chapters/Chapter1}
+	\input{./Chapters/Chapter2}
+	\input{./Chapters/Chapter3}
+	\input{./Chapters/Chapter4}
+	\input{./Chapters/Chapter5}
+	\input{./Chapters/Chapter6}
+	\appendix
+	\input{./Chapters/ApendixA}  
+%	\input{./Chapters/ApendiceB}
+ 
+%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+%       Bibliografa.
+%&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
+    
+	\bibliographystyle{unsrtnat}
+	\bibliography{./Biblio/References}
+	\addcontentsline{toc}{chapter}{Bibliografía.}
+
+\end{document}
+%==============================================================================
+%==============================================================================
