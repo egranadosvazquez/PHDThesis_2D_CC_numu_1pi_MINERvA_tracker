@@ -11,8 +11,11 @@ The simulation starts with the beam simulation, followed by the neutrino interac
 \section{Beam simulation}
 \label{Cap:Simulation:BeamSimulation}
 
-The neutrino flux simulation is performed in G4NuMI, based in GEANT 4 \cite{GEANT4}. 
+The neutrino flux simulation is performed in G4NuMI, based in GEANT 4 \cite{GEANT4}. In this stage the production of hadrons, the focusing and the secondary interactions of the hadrons with the different components of NuMI are simulated. It starts giving as input the proton beam from Main Injector and finishes with the neutrino beam. A detailed description of the flux simulation can be found here \cite{LeoThesis}.
 
+Most part of NuMI geometry components are included in the simulation, such as the magnetic horns, the decay pipe, the absorbers, etc. The flux simulation is specially sensitive to the hadron production and the flux focusing. 
+
+The proton beam from Main Injector, it corresponds to a 120 GeV kinetic energy with a Gaussian transverse profile distribution with $\sigma$ = 1.1 mm, continuing with the hadron production simulation. For the hadron production, the GEANT 4 hadronic model by the fault use the  
 
 
 
