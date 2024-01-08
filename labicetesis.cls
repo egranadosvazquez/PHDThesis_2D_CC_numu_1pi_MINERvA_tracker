@@ -84,6 +84,10 @@
 \RequirePackage{float}
 \usepackage{amsmath}
 \usepackage[square,numbers]{natbib}
+\usepackage{rotating}
+\usepackage{forloop}
+\usepackage{etoolbox}
+\usepackage{pgffor}
 %\spanisdecimal{.}
 \RequirePackage[colorlinks=true, allcolors=black]{hyperref}
 \RequirePackage[fixlanguage]{babelbib}
@@ -91,7 +95,7 @@
 
 \renewcommand{\mtctitle}{Content}
 
-
+\newcommand{\NewVar}{NoVar}
 
 \def\crest#1
 {
