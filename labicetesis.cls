@@ -54,7 +54,7 @@
 
 \LoadClass[11pt,letterpaper,oneside]{book}
 %\usepackage{babel}
-\RequirePackage[activeacute,main=english,spanish]{babel}           % Lenguaje de la plantilla.
+\RequirePackage[activeacute,main=english]{babel}           % Lenguaje de la plantilla.
 \RequirePackage[utf8x]{inputenc}					  % UTF-8
 \RequirePackage{ucs}
 \RequirePackage[T1,OT1]{fontenc}                      % Fuentes de texto.
@@ -91,7 +91,7 @@
 %\spanisdecimal{.}
 \RequirePackage[colorlinks=true, allcolors=black]{hyperref}
 \RequirePackage[fixlanguage]{babelbib}
-\selectbiblanguage{spanish}
+%\selectbiblanguage{spanish}
 
 \renewcommand{\mtctitle}{Content}
 
