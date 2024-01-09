@@ -559,9 +559,9 @@ After to make the data selection, the next step is to subtract the simulated bac
 
 
 
-\subsection{Sideband tuning}
+\subsection{Background tuning}
 \label{Cap:Analysis:BgStudies:SidebandTuning}
-For this analysis the meanly two sources of background comes from events where the truth $W_{exp} >$ 1.4 GeV  of from events where the $T_pi > $ 350 GeV. Most part of the events with a $W_{exp}$ events corresponds to DIS events and some resonant events. The plots in the \textbf{Figure} \ref{fig:Analysis:BgStudies:SidebandTunning:BGBreakdownTpiWexp} show the different components of the background. Specilly the backgroun that comes from the $W_{exp}$ miss reconstruction. 
+For this analysis the meanly two sources of background comes from events where the truth $W_{exp} >$ 1.4 GeV  of from events where the $T_pi > $ 350 GeV. Most part of the events with a $W_{exp}$ events corresponds to DIS events and some resonant events. The plots in the \textbf{Figure} \ref{fig:Analysis:BgStudies:SidebandTunning:BGBreakdownTpiWexp} show the different components of the background. Specially the background that comes from the $W_{exp}$ miss reconstruction. 
 
 \begin{figure}[!htb]
     \centering
@@ -571,18 +571,32 @@ For this analysis the meanly two sources of background comes from events where t
     \label{fig:Analysis:BgStudies:SidebandTunning:BGBreakdownTpiWexp}
 \end{figure}
 
+As mentioned in the introduction, before to remove the simulated background, it is necessary to make a study to know how well the background is simulated. To make this study, is used a region that is not included by the signal definition but kinematically adjacent. This region is known as the \textit{sideband}. Events are collected for data and MC, later the MC components of in the sideband region is scaled in situ to have a better agreement between data and MC in the Sideband region. Later the scale factor are applied to the components of MC but in the signal region, this procedures is known as the \textit{Background tuning}. This procedure helps to reduce the model dependency reducing  the systematic uncertainties. 
 
+For this analysis, the sideband region is selected for all the events that pass the tracked and untracked pion cuts but with $W_{exp} > $ 1.5 GeV. The \textbf{Figure} \ref{fig:Analysis:BgStudies:SidebandTunning:BreakdownWSideband} shows the sideband region. 
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.3]{Figures/Chapter4/BGStudies/Breakdown_WSideband_wexp_fit_1Pi_PN_.png}
-    \caption{$W_{exp}$ breakdown histogram. This histogram shows the portion of events that are signal }
-    \label{fig:enter-label}
+    \caption{$W_{exp}$ breakdown histogram. This  shows the portion of events that are signal and background in all the $W_{exp}$ spectrum. The arrow shows the sideband region for this analysis.}
+    \label{fig:Analysis:BgStudies:SidebandTunning:BreakdownWSideband} 
 \end{figure}
 
+Considering that $W_{exp}$ has tow definitions, the way to decide which events are part of the signal or sideband region is shown un the \textbf{Table} \ref{tab:Analysis:BgStudies:SidebandTunning:WTruthTable}
 
 
-\subsection{Background tuning}
+\begin{table}[]
+	
+	\centering
+	\begin{tabular}{c|c}
+		Que pedro juan & ni idea \\
+		asdfasd & dasdad
+	\end{tabular}
+	\caption{Truth table used to decide if the event is selected as a signal event, and if it is a part of the data selection or sideband event.}
+	\label{tab:Analysis:BgStudies:SidebandTunning:WTruthTable}
+\end{table}
+
+
 
 \subsection{Background subtraction}
 
