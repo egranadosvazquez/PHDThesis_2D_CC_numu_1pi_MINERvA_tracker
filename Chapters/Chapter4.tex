@@ -82,50 +82,33 @@ The one differential cross section is obtained respect to the variables presente
 
 \begin{table}[!htb]
     \centering
-    \begin{tabular}{c|l}
+    \begin{tabular}{c|p{4.6in}}
         \hline
         Variable & Description \\ \hline
-        $T_\pi$      & Pion kinetic energy. For this analysis the value of this variable is\\ 
-                     & obtained by two methods. These two methods are described in the \\
-                     & \textbf{Section} \ref{Cap:Analysis:SignalDefinition}. \\
+        $T_\pi$      & Pion kinetic energy. For this analysis the value of this variable is  obtained by two methods. These two methods are described in the \textbf{Section} \ref{Cap:Analysis:SignalDefinition}. \\ 
         \hline
-        $\theta_\pi$ & Pion polar angle respect to the neutrino beam direction. The central \\
-                     & value of this variable depends if the event has a tracked or untracked \\
-                     & pion. This is explained in the \textbf{Section} \ref{Cap:Analysis:DataSelection}. \\
+        $\theta_\pi$ & Pion polar angle respect to the neutrino beam direction. The central value of this variable depends if the event has a tracked or untracked pion. This is explained in the \textbf{Section} \ref{Cap:Analysis:DataSelection}. \\
         \hline
-        $P_\mu$      & Muon momentum magnitude. The momentum of the muon is measured  \\
-                     & by MINOS Near detector, the muon momentum can be reconstructed  \\
-                     & by the track length or by curvature. The muon reconstruction is \\
-                     & explained in \ref{Cap:MnvExp:MnvDetector:DataReconstruction}. \\
+        $P_\mu$      & Muon momentum magnitude. The momentum of the muon is measured by MINOS Near detector, the muon momentum can be reconstructed by the track length or by curvature. The muon reconstruction is explained in \ref{Cap:MnvExp:MnvDetector:DataReconstruction}. \\
         \hline
-        $\theta_\mu$ & Muon polar angle respect to the neutrino beam direction. This is \\
-                     & measured by the MINER$\nu$A detector taking as origin the neutrino \\
-                     & vertex position an the reconstruction algorithm measure the angle.\\
+        $\theta_\mu$ & Muon polar angle respect to the neutrino beam direction. This is measured by the MINER$\nu$A detector taking as origin the neutrino vertex position an the reconstruction algorithm measure the angle.\\
         \hline
-        $P^z_\mu$    & Muon longitudinal momentum respect to the neutrino beam. It is \\ 
-                     & obtained by $P^z_\mu = P_\mu cos \theta_\mu$. \\
+        $P^z_\mu$    & Muon longitudinal momentum respect to the neutrino beam. It is obtained by $P^z_\mu = P_\mu cos \theta_\mu$. \\
         \hline
-        $P^T_\mu$    & Muon transversal momentum respect to the neutrino beam. It is \\
-                     & obtained by $P^T_\mu = P_\mu sin \theta_\mu$. \\
+        $P^T_\mu$    & Muon transversal momentum respect to the neutrino beam. It is obtained by $P^T_\mu = P_\mu sin \theta_\mu$. \\
         \hline
-        $E_\nu$      & Neutrino energy. This is estimated by the relation $E_\nu = E_\mu + E_{had}$. \\
-                     & Where $E_\mu$ is the muon energy and $E_{had}$ is the estimated hadronical. \\
-                     & energy. \\
+        $E_\nu$      & Neutrino energy. This is estimated by the relation $E_\nu = E_\mu + E_{had}$. Where $E_\mu$ is the muon energy and $E_{had}$ is the estimated hadronic energy. \\
         \hline
-        $Q^2$        & Four-momentum transfer by the neutrino. Defined as $Q^2 = - (p_\nu -p_\mu)^2$\\ 
-                     & or using lepton kinematics $Q^2 = 2E_\nu(E_\mu-P^z_\mu) + m^2_\mu$. Where $p_\nu$ and\\ 
-                     & $p_\mu$ are the four-momentum of the incoming neutrino and the muon\\
-                     & respectively.\\ 
+        $Q^2$        & Four-momentum transfer by the neutrino. Defined as $Q^2 = - (p_\nu -p_\mu)^2$ or using lepton kinematics $Q^2 = 2E_\nu(E_\mu-P^z_\mu) + m^2_\mu$. Where $p_\nu$ and $p_\mu$ are the four-momentum of the incoming neutrino and the muon respectively.\\ 
         \hline
-        $W_{exp}$    & Experimental invariant hadronic mass. $W_{exp} = m^2_N + 2m_NE_{had} - Q^2$ \\
-                     & $= m^2_N + 2m_N(E_\nu-E_\mu)$ is used as approximation of W.\\
+        $W_{exp}$    & Experimental invariant hadronic mass. $W_{exp} = m^2_N + 2m_NE_{had} - Q^2$ $= m^2_N + 2m_N(E_\nu-E_\mu)$ is used as approximation of W.\\
         \hline
     \end{tabular}
     \caption{Variables used in the 1D analysis and a description of each variable.}
     \label{tab:Analisys:AnaVariables:1Danalysis}
 \end{table}
 
-These are some clarifications that have to be given for $E_{had}$ and $W_{exp}$. $E_{had}$ is a variable that usually is smeared fro the real value, it is because in the interactions can be produced can be produced, which are invisible for the detector. Other sources of smearing are the production of pions, charged or neutral, and the initial state of the nucleons. For this analysis the hadronical energy is obtained by two methods, depending if the event pass the cut to be a categorized as pion tracked or untracked event. For the case of the tracked event $E_{had}$ is obtained as follow:
+These are some clarifications that have to be given for $E_{had}$ and $W_{exp}$. $E_{had}$ is a variable that usually is smeared fro the real value, it is because in the interactions can be produced can be produced, which are invisible for the detector. Other sources of smearing are the production of pions, charged or neutral, and the initial state of the nucleons. For this analysis the hadronic energy is obtained by two methods, depending if the event pass the cut to be a categorized as pion tracked or untracked event. For the case of the tracked event $E_{had}$ is obtained as follow:
 
 \begin{equation}
     E_{had} = T_\pi + m_\pi + E_{had,\ no\ \pi^+}
@@ -134,7 +117,7 @@ These are some clarifications that have to be given for $E_{had}$ and $W_{exp}$.
 
 Where $m_\pi$ is the rest mass of the positive pion, $E_{had,\ no\ \pi^+}$ is the  no-pion-muon corrected remaining energy. To obtain $E_{had,\ no\ \pi^+}$, the first step is measure all the visible energy deposited by the final particles in the detector without the muon track energy. usually called $E_{avail}$, then, the calorimetric energy from the pion candidate tracks is removed, and finally is applied a calorimetric correction, all this process is fully described in \cite{AaronThesis}.  
 
-By other hand, for the case when the event corresponds to an untracked pion event, the hadronical energy is calculated as follow: 
+By other hand, for the case when the event corresponds to an untracked pion event, the hadronic energy is calculated as follow: 
 
 \begin{equation}
     E_{had} = N_{michels}m_\pi + E_{avail}
@@ -305,7 +288,7 @@ These are the cuts typically applied in the charge pion analyses in the \textbf{
 
 In \ref{tab:Analysis:Cuts:TrackedCutTable} the cut table for tracked cuts is shown. In this cut table is only included the tracked pion efficiency and purity. This table was obtained using only the ME1A playlist of the data set of MINERvA. In the table the general cuts are applied too. 
 
-\begin{sidewaystable}[!hbt]
+\begin{table}[!hbt]
     \tiny
     \centering
     \begin{tabular}{|*{12}{l|}}
@@ -332,7 +315,7 @@ In \ref{tab:Analysis:Cuts:TrackedCutTable} the cut table for tracked cuts is sho
     \end{tabular}
     \caption{Cut table for tracked events. DataPOT: 89785235631482617856.00. MCPOT: 406599660544667287552.00.}
     \label{tab:Analysis:Cuts:TrackedCutTable}
-\end{sidewaystable}
+\end{table}
 
 
 
@@ -393,13 +376,13 @@ The cuts applied for the trackless pion are:
     
     \item \textbf{Closer michel cluster:} This cut measure the 3D distance between the vertex and the endpoints of all the michel candidates that passed the previous cuts. It returns the closest endpoint to the vertex or cluster. This information is used to obtain the best 3D distance between the vertex and the closest michel endpoint, this distance is called pion range. 
     \item \textbf{One pion cut:} This cut removes the event that presents more that one michel electron candidate. In this way the multi-pion events are removed from the sample.
-    \item \textbf{$W_{exp}$ untracked cut:} This cut removes the events with $W_{exp} > 1.4$ GeV. The $E_{had}$ is obtained different that for the tracked events, the definition for the untracked hadronical energy is explained in \ref{Cap:Analysis:Variables}.
+    \item \textbf{$W_{exp}$ untracked cut:} This cut removes the events with $W_{exp} > 1.4$ GeV. The $E_{had}$ is obtained different that for the tracked events, the definition for the untracked hadronic energy is explained in \ref{Cap:Analysis:Variables}.
 
 \end{itemize}
 
 The untracked event data selection gives a similar efficiency compared to the tracked data selection. It is around of the 7\% and a purity of 62\%. In the \textbf{Table} \ref{tab:Analysis:Cuts:UntrackedCutTable} the cut table for the untracked events is shown. 
 
-\begin{sidewaystable}[!hbt]
+\begin{table}[!hbt]
     \tiny
     \centering
     \begin{tabular}{|*{12}{l|}}
@@ -425,7 +408,12 @@ The untracked event data selection gives a similar efficiency compared to the tr
     \end{tabular}
     \caption{P4 Cut Table, Untracked data selection,\today. DataPOT: 89785235631482617856.00. MCPOT: 406599660544667287552.00..}
     \label{tab:Analysis:Cuts:UntrackedCutTable}
-\end{sidewaystable}
+\end{table}
+
+\subsection{Special cut}
+\label{Cap:Analysis:DataSelection:Cuts:SpecialCut}
+According to the results presented in \ref{fig:Analysis:SignalDefinition:1DAnalysis:thetapivsTpi}, there is an special cut made to the when is measured $\theta_\pi$. The cut consists in only take untracked pions with 20 MeV $< T_\pi < $ 350 MeV. The \textbf{Table} \textcolor{red}{Agregar la tabla para $\theta_\pi$} shows the results after to apply this cut to the sample.
+
 
 \pagebreak
 
@@ -515,12 +503,12 @@ The results that are shown here where obtained using the MINER$\nu$A data for th
 }
 
 \subsection{Data Selection 2D analysis Results}
-\label{Cap:Analysis:DataSelectionResults1D}
+\label{Cap:Analysis:DataSelectionResults2D}
 
 For the 2D analysis it only contains the tracked events, therefore the cut table that corresponds to this data selections \ref{tab:Analysis:Cuts:TrackedCutTable}. Fro this data selection is usesd the same data set that for the 1D analysis. For the simulation, the same simulation that for the 1D analysis was used. For this analysis the MC simulation is tuned by MnvGENIEv4.3.1, the Pion Reweighter is not applied because the trackless pions are not included in the data selection. 
 
 %\foreach \var in {loW,midW,hiW}{ 
-\foreach \var in  {ptmu_vs_tpi,pzmu_vs_ptmu,tpi_vs_pmu,tpi_vs_thetapi_deg}{
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
 %\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
 
     \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
@@ -534,6 +522,24 @@ For the 2D analysis it only contains the tracked events, therefore the cut table
     }{}
     \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
       \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_eu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
     }{}
  
     \begin{figure}
@@ -573,53 +579,647 @@ For this analysis the meanly two sources of background comes from events where t
 
 As mentioned in the introduction, before to remove the simulated background, it is necessary to make a study to know how well the background is simulated. To make this study, is used a region that is not included by the signal definition but kinematically adjacent. This region is known as the \textit{sideband}. Events are collected for data and MC, later the MC components of in the sideband region is scaled in situ to have a better agreement between data and MC in the Sideband region. Later the scale factor are applied to the components of MC but in the signal region, this procedures is known as the \textit{Background tuning}. This procedure helps to reduce the model dependency reducing  the systematic uncertainties. 
 
-For this analysis, the sideband region is selected for all the events that pass the tracked and untracked pion cuts but with $W_{exp} > $ 1.5 GeV. The \textbf{Figure} \ref{fig:Analysis:BgStudies:SidebandTunning:BreakdownWSideband} shows the sideband region. 
+For these analyses, the sideband region is selected for all the events that pass the tracked and untracked pion cuts but with $W_{exp} > $ 1.5 GeV in the case of the 1D analysis and for the 2D analysis only the untracked pion events. The \textbf{Figure} \ref{fig:Analysis:BgStudies:SidebandTunning:BreakdownWSideband} shows the sideband region for the 1D analysis. \textcolor{red}{Agregar el sideband para el analysis 2D y thetapi 1D.}
 
-\begin{figure}
+\begin{figure}[!htb]
     \centering
     \includegraphics[scale=0.3]{Figures/Chapter4/BGStudies/Breakdown_WSideband_wexp_fit_1Pi_PN_.png}
-    \caption{$W_{exp}$ breakdown histogram. This  shows the portion of events that are signal and background in all the $W_{exp}$ spectrum. The arrow shows the sideband region for this analysis.}
+    \caption{$W_{exp}$ breakdown histogram. This  shows the portion of events that are signal and background in all the $W_{exp}$ spectrum. The arrow shows the sideband region for the 1D analysis.}
     \label{fig:Analysis:BgStudies:SidebandTunning:BreakdownWSideband} 
 \end{figure}
 
-Considering that $W_{exp}$ has tow definitions, the way to decide which events are part of the signal or sideband region is shown un the \textbf{Table} \ref{tab:Analysis:BgStudies:SidebandTunning:WTruthTable}
+In the 1D analysis, if an event passes the tracked and untracked pion cuts previous to the $W_{exp}$ cut, the way to decide whether the event is a selected or sideband event and the central values that will be taken by the variables is shown in the \textbf{Table} \ref{tab:Analysis:BgStudies:SidebandTunning:WTruthTable}.
 
 
-\begin{table}[]
+\begin{table}[!htb]
 	
 	\centering
-	\begin{tabular}{c|c}
-		Que pedro juan & ni idea \\
-		asdfasd & dasdad
+
+	\begin{tabular}{c|c|c}
+        Tracked           & Untracked         & Status \\ \hline
+		\cellcolor{green} & \cellcolor{green} & \cellcolor{green} Tracked \\ \hline
+		\cellcolor{green} & \cellcolor{orange} & \cellcolor{green} Tracked\\ \hline
+  		\cellcolor{green} & \cellcolor{cyan} & \cellcolor{green} Tracked\\ \hline
+		\cellcolor{orange} & \cellcolor{green} & \cellcolor{green} Untracked\\ \hline
+  		\cellcolor{orange} & \cellcolor{orange} & \cellcolor{orange} Tracked\\ \hline
+		\cellcolor{orange} & \cellcolor{cyan} & \cellcolor{cyan} Untracked\\ \hline
+  		\cellcolor{cyan} & \cellcolor{green} & \cellcolor{green} Untracked\\ \hline
+		\cellcolor{cyan} & \cellcolor{orange} & \cellcolor{cyan} Tracked\\ \hline
+  		\cellcolor{cyan} & \cellcolor{cyan} & \cellcolor{cyan} Tracked\\ \hline
 	\end{tabular}
-	\caption{Truth table used to decide if the event is selected as a signal event, and if it is a part of the data selection or sideband event.}
+
+    \caption{Truth table used to decide the status of an event passes the tracked and untracked previous cuts to the $W_{exp}$ is a selected event or sideband event, and if it is taking the values tracked or untracked central values. The colors code for the $W_{exp}$ regions are: \textbf{\textcolor{green}{GREEN}} color for $W_{exp}<$ 1.4 GeV, \textbf{\textcolor{orange}{ORANGE}} for 1.4 GeV $<W_{exp}<$ 1.5 GeV and \textbf{\textcolor{cyan}{ CYAN}} for $W_{exp}>$ 1.5 GeV. In the status column, it specify if the value for the event comes form the tracked or untracked $W_{exp}$ definition meanwhile the color \textbf{\textcolor{green}{GREEN}} is for for data selection events, \textbf{\textcolor{cyan}{CYAN}} for sideband and \textbf{\textcolor{orange}{ORANGE}} is not considered for either.}
 	\label{tab:Analysis:BgStudies:SidebandTunning:WTruthTable}
 \end{table}
 
+For the cases where the event only pass tracked or untracked pion cuts it just take the central value of their respective type. For the 2D analysis it is not necessary to use this table because it only use tracked pion events. 
+
+The background is constrained by a iterative $\chi^2$ minimization technique:
+\begin{equation}
+    \chi^2=\sum^{N\ bins}_i \frac{\left(N_{simulation,i}-N_{Data,i}\right)^2}{\sigma^2_{simulation,i}+\sigma^2_{Data,i}},
+\end{equation}
+
+Where $N_{simulation}=N_{bakground}+N_{signal}$ in the sideband region and $N_{Data}$ is the Data point in the simulated region. $N_{background}$  can be separated in components and scale them to fit the simulated distribution to the data distribution.  
+
+In both analyses, the sideband region background events are separated in three components depending their $W_{exp}\ true$ value. The components are \textit{low} for $W_{exp}\ true<$ 1.4 GeV, \textit{middle} for 1.4 GeV $<W_{exp}\ true< $ 1.8 GeV and \textit{high} for $W_{exp}\ true > 1.8$ GeV. The low upper limit is given because these are events that should be in the data selection region bet the $W_{exp}$ is not well reconstructed. The limit imposed  between middle and high at 1.8 GeV is related to the simulation models, for $W < 1.8$ GeV the events are models by KNO + PYTHIA which includes resonant and hadronization production. For $W_{exp} > 1.8$ GeV the events are only modeled by PYTHIA, as it is explained in \ref{Cap:Simulation:GENIE}. The scale factors for the 1D and 2D analyses are shown in the \textbf{Table} \ref{tab:BgStudies:SidebandTunning:BGtunes}.
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{c|c|c|c|c}
+         Analysis & Low & Middle   &   High  & $\chi^2/ndf$ \\ \hline
+         1D       & 1   & 0.903222 & 1.08653 & \textcolor{red}{Falta Agregar} \\
+         1D $\theta_\pi$& & & & \\
+         2D       &     &          &         &
+    \end{tabular}
+    \caption{Results of the $\chi^2$ minimization to obtain the background tunes by components.}
+    \label{tab:BgStudies:SidebandTunning:BGtunes}
+\end{table}
+
+In the \textbf{Figures} \textcolor{red}{agregar figuras} for the 1D, 1D $\theta_\pi$ signal and 2D analyses, respectively, the sideband region before and after the background fit is shown. 
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.2]{Figures/Chapter4/BGStudies/PreWFit_wexp_fit_1Pi_PN_SidebandRegion_1DAnalysis.png}
+    \includegraphics[scale=0.2]{Figures/Chapter4/BGStudies/PostWFit_wexp_fit_1Pi_PN_SidebandRegion_1DAnalysis.png}
+    \caption{Pre-fitted (left) and post=fitted (right) MC sideband histograms for the 1D analysis.}
+    \label{fig:BgStudies:SidebandTunning:PrePosFit1DAnalysis}
+\end{figure}
 
 
 \subsection{Background subtraction}
+The following results correspond to the 1D analysis background subtraction. 
 
-%++++++++++++++++++++++++++++++++++++++
-%     Migration Matrix
-%++++++++++++++++++++++++++++++++++++++
-\section{Migration Matrix}
+%\foreach \var in {loW,midW,hiW}{ 
+\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
+%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
+    \ifthenelse{\equal{\var}{enu}}{
+      \renewcommand{\NewVar}{E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{mixtpi}}{
+      \renewcommand{\NewVar}{T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
+      \renewcommand{\NewVar}{\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu}}{
+      \renewcommand{\NewVar}{P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu}}{
+      \renewcommand{\NewVar}{P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{pzmu}}{
+      \renewcommand{\NewVar}{P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetamu_deg}}{
+      \renewcommand{\NewVar}{\theta_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{q2}}{
+      \renewcommand{\NewVar}{Q^2}
+    }{}
+    \ifthenelse{\equal{\var}{wexp}}{
+      \renewcommand{\NewVar}{W_{exp}}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/Chapter4/BGStudies/BGSubData_\var__1Pi_BWN.png}
+        \caption{$\NewVar$ 1D Background subtraction.}
+        \label{fig:Analysis:BgSub:\var}
+    \end{figure}  
+}
 
+%\foreach \var in {loW,midW,hiW}{ 
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/Chapter4/BGStudies/2D_BG_\var__BWN.png}
+        \caption{$\NewVar$ 2D Background subtraction.}
+        \label{fig:Analysis:BGSubtraction:\var}
+    \end{figure}  
+}
 
 %++++++++++++++++++++++++++++++++++++++
 %     Ungolding
 %++++++++++++++++++++++++++++++++++++++
 
 \section{Unfolding}
+\label{Cap:Analysis:Unfolding}
+As it is explained in the introduction of the chapter, the unfolding process has the goal to remove the smearing effects in the distributions generated by detector deficiencies, detector resolution, detector geometry, etc. All these effects are simulated as well as is possible to then apply these effects to the simulation to have a better comparison between the simulation data selection and data selection results. This can be represented as follow: 
+\begin{equation}
+    y_j=\sum^{truth\ bins}_i U_{ij}\lambda_i
+    \label{eq:Analysis:unfolding:SmearingEq}
+\end{equation}
 
+where $y_j$ is the number of reconstructed events without background of the variable $y$ in the bin $j$, $U_{ij}$ is the migration matrix and $\lambda_i$ is the number of events in the truth bin $i$.
+
+The $j$ column of the migration matrix has the fraction of reconstructed events that falls in the $j$ truth value. For this, the reconstructed event must be a signal event and the truth and reconstructed binning have to be equal. In this way the migration matrix gives information about how the variable is smeared, in a ideal detector, the migration matrix is an identity matrix ($\mathbb{I}_{truth\ bins}$).
+
+In the \textbf{Figures} \ref{fig:Analysis:1DMigrationMtx:enu}-\ref{fig:Analysis:1DMigrationMtx:wexp} including the $\theta_\pi$ migration matrix. The migration matrices present a absolute binning, it means that the X and Y axis binning correspond with the bin number. The actual binning is presented in the description of each variable. 
+
+\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
+%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
+    \ifthenelse{\equal{\var}{enu}}{
+      \renewcommand{\NewVar}{E_\nu}
+      \renewcommand{\Binning}{[0, 1000, 3000, 4000, 6000, 9000, 14000, 30000] MeV}
+    }{}
+    \ifthenelse{\equal{\var}{mixtpi}}{
+      \renewcommand{\NewVar}{T_\pi}
+      \renewcommand{\Binning}{[0, 20, 45, 60, 75, 100, 125, 166, 200, 350] MeV}
+    }{}
+    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
+      \renewcommand{\NewVar}{\theta_\pi}
+      \renewcommand{\Binning}{[0, 15, 30, 45, 60, 76, 108, 122, 136, 150, 165, 180] degrees}
+    }{}
+    \ifthenelse{\equal{\var}{pmu}}{
+      \renewcommand{\NewVar}{P_\mu}
+      \renewcommand{\Binning}{[0, 1000,  2000,  3000,  4000, 5000, 7000, 10000, 13000, 20000, 30000] MeV}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu}}{
+      \renewcommand{\NewVar}{P^T_\mu}
+      \renewcommand{\Binning}{[0, 100, 200,  300,   400,  500, 600, 800, 1000, 1200, 1500, 2500] MeV}
+    }{}
+    \ifthenelse{\equal{\var}{pzmu}}{
+      \renewcommand{\NewVar}{P^z_\mu}
+      \renewcommand{\Binning}{[0, 1000, 2000,  3000,  4000, 5000, 6000, 8000, 10000, 15000, 20000] MeV}
+    }{}
+    \ifthenelse{\equal{\var}{thetamu_deg}}{
+      \renewcommand{\NewVar}{\theta_\mu}
+      \renewcommand{\Binning}{[0, 1, 2,  3,  4,  5,  6, 7, 8, 9, 10, 11, 12, 14 , 16 , 20] degree}
+    }{}
+    \ifthenelse{\equal{\var}{q2}}{
+      \renewcommand{\NewVar}{Q^2}
+      \renewcommand{\Binning}{[0, 0.025e6, 0.05e6, 0.1e6, 0.2e6, 0.3e6, 0.4e6, 0.5e6, 0.7e6, 1.0e6, 1.3e6, 2.0e6, 3.0e6] MeV\( ^2\)}
+    }{}
+    \ifthenelse{\equal{\var}{wexp}}{
+      \renewcommand{\NewVar}{W_{exp}}
+      \renewcommand{\Binning}{[0, 1000, 1100, 1200, 1300, 1400, 1500] MeV}
+    }{}
+    \begin{figure}[!htb]
+        \centering
+        \includegraphics[scale=0.28]{Figures/Chapter4/Unfolding/Migration_AbsBins_\var.png}
+        \caption{$\NewVar$ 1D Migration Matrix. The binning for the variable is \Binning.}
+        \label{fig:Analysis:1DMigrationMtx:\var}
+    \end{figure}  
+}
+\pagebreak
+
+For the 2D analysis, the smearing effects are observed respect 2 variables variables. For the 2D analysis the smearing is described by:
+\begin{equation}
+    d_{ij}=\sum^{n}_{a}\sum^{m}_{b}U_{abij}\rho_{ab},
+    \label{eq:Analysis:unfolding:SmearingEq2D}
+\end{equation}
+
+where $d$ is the number of reconstructed events for the $i$ and $j$ bins for the $x$ and $y$ variables, respectively. $rho$ is the number of events for the truth $a$ and $b$ bins for the $x$ and $y$ variables, respectively. $n$ and $m$ are the number of bins for the variable $x$ and $y$, respectively. $U_{abij}$ is a migration matrix in four dimensions, similar to the 1D analysis migration matrix, it contains the information of the fraction of reconstructed events that fall in a true bin, in this case it is observed as function of two variables. For obvious reasons, the 4 dimensional matrix can not be plotted, but the projections of the 2D migration matrix of the $x$ in the $y$ migration matrix can be used. These migration matrices for the 2D analysis are shown in the \textbf{Figures} \ref{fig:Analysis:2DMigrationMatrix:ptmu_vs_tpi}-\ref{fig:Analysis:2DMigrationMatrix:tpi_vs_enu}
+
+%\foreach \var in {loW,midW,hiW}{ 
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+      \renewcommand{\Binning}{[1500, 2500, 3750, 4750, 5250, 8250, 20000] MeV, [0, 150, 300, 400, 550, 650, 2000] MeV}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T_\mu,P^z\mu}
+      \renewcommand{\Binning}{[0, 150, 300, 400, 550, 650, 2000] MeV, [1500, 2500, 3750, 4750, 5250, 8250, 20000] MeV}
+    }{}
+    
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+      \renewcommand{\Binning}{[35, 100, 150, 200, 350] MeV, [0, 15, 30, 45, 60, 76, 108, 136, 180] degree}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi,T_\pi}
+      \renewcommand{\Binning}{[0, 15, 30, 45, 60, 76, 108, 136, 180] degree, [35, 100, 150, 200, 350] MeV}
+    }{}
+
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+      \renewcommand{\Binning}{[35., 100., 150., 200., 350.] MeV, [1500, 3000, 4000, 5500, 7500, 10000, 13000, 20000] MeV}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu,T_\pi}
+      \renewcommand{\Binning}{[1500, 3000, 4000, 5500, 7500,
+                10000, 13000, 20000] MeV, [35., 100., 150., 200., 350.] MeV}
+    }{}
+
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+      \renewcommand{\Binning}{[0, 270, 420, 600, 800, 1100, 2000] MeV, [35, 100, 150, 200, 350] MeV}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi, P^T_\mu}
+      \renewcommand{\Binning}{[35, 100, 150, 200, 350] MeV, [0, 270, 420, 600, 800, 1100, 2000] MeV}
+    }{}
+ 
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+      \renewcommand{\Binning}{[0, 1000, 3000, 4000, 6500, 9500, 14000, 30000] MeV, [35, 100, 150, 200, 350] MeV}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi, E_\nu}
+      \renewcommand{\Binning}{[35, 100, 150, 200, 350] MeV, [0, 1000, 3000, 4000, 6500, 9500, 14000, 30000] MeV}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/Chapter4/Unfolding/2D_Migration_VarBins_\var.png}
+        \caption{$\NewVar$ 2D Migration matrix, with binning \Binning $\ $respectively. }
+        \label{fig:Analysis:2DMigrationMatrix:\var}
+    \end{figure}  
+}
+
+
+
+
+
+\pagebreak
 \subsection{Warping Studies}
+\label{Cap:Analysis:Unfolding:WarpingStudies}
+
+At this point, the smeared model can be compared with the data, but usually one is interested to compare the results with not only one model or with the results of other experiments. Reason why the importance of the unfolding process. This process is the inverse process of what is shown in the \ref{eq:Analysis:unfolding:SmearingEq} and \ref{eq:Analysis:unfolding:SmearingEq2D}, it means given a reconstructed distribution to obtain the truth distribution. In this way the data results can be compared with other models or other experiments. Unfortunately, most part of the migration matrices are not analytically invertible matrices. Hence, the migration matrix is inverted by a numerical iterative method based in the D'Agostini method \cite{DAGOSTINI1995487}\cite{dagostini2010improved}. For this method, as the number of iterations increase the variance decrease but at the cost of increasing bias, the increase of the bias can be moderated truncating the number of iterations. To determine the number of iteration the minimum number of necessary iterations to stabilize the bias to a minimum is used. The bias is given by:
+
+\begin{equation}
+    \chi^2 = \sum_{\alpha\beta}(\hat{\lambda}^{(k)}-\lambda)_\beta V^{-1}_{\beta\alpha} (\hat{\lambda}^{(k)}-\lambda)_\alpha,
+    \label{eq:Analysis:Unfolding:chi2WarpingStudies}
+\end{equation}
+
+where $\lambda$ corresponds to the number of events in the true distribution, $\hat{\lambda}^{(k)}$ correspond to the unfolded distribution after $k$ iterations, $\alpha$ and $\beta$ are the bins of the unfolded distribution and $V$ is the unfolding covariance matrix.  
+
+The number of iteration used to unfold the reconstructed distribution is obtained by the \textit{Warping Study}. It consists in to use a nominal distribution that will be used as the truth distribution and a re-weighted distribution or "warped" distribution. This is made with the aim to test the unfold procedure with different models determining the sensitivity by the different weights. The $\chi^2$  obtained in \ref{eq:Analysis:Unfolding:chi2WarpingStudies} is obtained for each iteration in N number of universes, in this analysis N=100. The universes are used to consider statistical fluctuations. The selected number of iteration corresponds with the minimum $\chi^2$ media.
+
+This procedure is made for all the variables that are presented in the analysis. For this analysis where used 3 different models to warp the nominal distributions. The models are:
+
+\begin{itemize}
+    \item \textbf{Resonant $M^{RES}_A$ Warp (WARP1)}: The resonant axial mass in the Rein-Seghal model is shifted by +1 $\sigma$. In the \textbf{Chapter} \textcolor{red}{Dar capitulo donde se hablan sobre los weights} it is explained.
+    \item \textbf{Anisotropic $\Delta$ Decay Warp (WARP2)}: This weight modify the angular $\Delta$ angular distribution. In the \textbf{Chapter} \textcolor{red}{Agregar la referencia sobre los weights} it is explained. 
+    \item \textbf{MK Warp(WARP3)}: This weight modify the single pion production events. The MK model \cite{MK:PhysRevD.97.013002} is an extension of the Rein-Seghal model. \textcolor{red}{Agregar texto sobre MK model}
+\end{itemize}
+
+These three warps were used for the 1D analysis and 2D analysis. In the \textbf{Figures} \textcolor{red}{Agregar figuras de warping studies para 1D} the results for the 1D analysis and 2D analysis are shown. In the results, it shows the the number of iterations as function of the number of iterations. These shows and histogram of the value of the $\chi^2$ for the 1oo universes, the average $\chi^2$, the median, truncated $\chi^2$ mean and the number of degrees of freedom (ndf). The expected result is that the number and the value of $\chi^2$ approaches the ndf. 
+
+\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
+%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
+    \ifthenelse{\equal{\var}{enu}}{
+      \renewcommand{\NewVar}{E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{mixtpi}}{
+      \renewcommand{\NewVar}{T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
+      \renewcommand{\NewVar}{\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu}}{
+      \renewcommand{\NewVar}{P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu}}{
+      \renewcommand{\NewVar}{P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{pzmu}}{
+      \renewcommand{\NewVar}{P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetamu_deg}}{
+      \renewcommand{\NewVar}{\theta_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{q2}}{
+      \renewcommand{\NewVar}{Q^2}
+    }{}
+    \ifthenelse{\equal{\var}{wexp}}{
+      \renewcommand{\NewVar}{W_{exp}}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/Chapter4/Unfolding/Warping_\var_WARP1.png}
+        \includegraphics[scale=0.3]{Figures/Chapter4/Unfolding/Warping_\var_WARP2.png}
+        \includegraphics[scale=0.3]{Figures/Chapter4/Unfolding/Warping_\var_WARP3.png}
+        \caption{$\NewVar$ 1D Warping studies results.}
+        \label{fig:Analysis:Unfolding:1DWarpingStudies\var}
+    \end{figure}  
+}
+
+%\foreach \var in {loW,midW,hiW}{ 
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/Chapter4/Unfolding/Warping_20240117_\var_WARP1.png}
+        \includegraphics[scale=0.3]{Figures/Chapter4/Unfolding/Warping_20240117_\var_WARP2.png}
+        \includegraphics[scale=0.3]{Figures/Chapter4/Unfolding/Warping_20240117_\var_WARP3.png}
+        \caption{$\NewVar$ 2D warping studies results}
+        \label{fig:Analysis:Unfolding:2DWarping\var}
+    \end{figure}  
+}
+
+There are some variables, such as $W_{exp}$ where the $\chi^2$ values never converge to the ndf, for these cases the number of iterations is fixed at 10. These variables are highly dependent on the model and cannot be successfully unfolded. Results obtained for these variables do not pass the required test and, therefore, cannot be published. However, they can be reported internally within the collaboration and in this thesis. The number of iterations that will be used for the 1D analysis and 2D analysis are shown in the \textbf{Tables} \ref{tab:Analysis:Unfolding:1DIterations} and \ref{tab:Analysis:Unfolding:2DIterations}.
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{c|c}
+        Variable & Number of iterations \\ \hline
+        $E_\nu$  & 3\\
+        $T_\pi$  & 4\\
+        $\theta_\pi$ & 8\\
+        $P_\mu$ & 3\\
+        $P^T_\mu$ & 4\\
+        $P^z_\mu$ & 3\\
+        $\theta_\mu$ & 2 \\
+        $Q^2$ & 8\\
+        $W_{exp}$ & 10
+    \end{tabular}
+    \caption{The value is obtained by initially selecting the first \textbf{\# of iterations} bin that approaches the ndf. Subsequently, a comparison is made between the different warps, and the higher number among the warps is chosen.}
+    \label{tab:Analysis:Unfolding:1DIterations}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \begin{tabular}{c|c}
+        Variable & Number of iterations \\ \hline
+        $P^T_\mu$ vs $T_\pi$ and $T_\pi$ vs $P^T_\mu$ & 5\\
+        $P^T_\mu$ vs $P^z_\mu$ and $P^z_\mu$ vs $P^T_\mu$ & 4\\
+        $P_\mu$ vs $T_\pi$ and $T_\pi$ vs $P_\mu$ & 5\\
+        $\theta_\pi$ vs $T_\pi$ and $T_\pi$ vs $\theta_\pi$ & 10\\
+        $E_\nu$ vs $T_\pi$ and $T_\pi$ vs $E_\nu$ & 8
+    \end{tabular}
+    \caption{The value is obtained by initially selecting the first \textbf{\# of iterations} bin that approaches the ndf. Subsequently, a comparison is made between the different warps, and the higher number among the warps is chosen.}
+    \label{tab:Analysis:Unfolding:2DIterations}
+\end{table}
+
 
 \subsection{Unfolded Distributions}
+\label{Cap:Analysis:Unfolding:nfoldingResults}
+Using the number of iterations obtained from the warping studies, the unfolding for all the variables were obtained. The unfolding process move events for one bin to other, changing the statistical error between in the bins. This produces a correlation between the statistical error. It can be represented in a covariance matrix. At the same time the unfolding process is made to the systematic universes to get the error propagation in the whole cross section measurement. The results of the unfolding are shown in the \textbf{Figures} \ref{fig:Analysis:Unfolding:1DUnfoldedenu}-\ref{fig:Analysis:Unfolding:1DUnfoldedwexp} for the 1D analysis and \ref{fig:Analysis:Unfolding:2DUnfoldedptmu_vs_tpi}-\ref{fig:Analysis:Unfolding:2DUnfoldedtpi_vs_enu} for the 2D analysis.
 
+\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
+%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
+    \ifthenelse{\equal{\var}{enu}}{
+      \renewcommand{\NewVar}{E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{mixtpi}}{
+      \renewcommand{\NewVar}{T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
+      \renewcommand{\NewVar}{\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu}}{
+      \renewcommand{\NewVar}{P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu}}{
+      \renewcommand{\NewVar}{P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{pzmu}}{
+      \renewcommand{\NewVar}{P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetamu_deg}}{
+      \renewcommand{\NewVar}{\theta_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{q2}}{
+      \renewcommand{\NewVar}{Q^2}
+    }{}
+    \ifthenelse{\equal{\var}{wexp}}{
+      \renewcommand{\NewVar}{W_{exp}}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/Chapter4/Unfolding/Unfolded_\var__1Pi_BWN.png}
+        \caption{$\NewVar$ 1D Unfolded histogram.}
+        \label{fig:Analysis:Unfolding:1DUnfolded\var}
+    \end{figure}  
+}
+
+%\foreach \var in {loW,midW,hiW}{ 
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/Chapter4/Unfolding/2D_Unfolded_\var__BWN.png}
+        \caption{$\NewVar$ 2D Unfolded histogram}
+        \label{fig:Analysis:Unfolding:2DUnfolded\var}
+    \end{figure}  
+}
+
+\pagebreak
 %++++++++++++++++++++++++++++++++++++++
 %     Efficiency  
 %++++++++++++++++++++++++++++++++++++++
 
-\section{Efficiency}
+\section{Efficiency correction}
+\label{Cap:Analysis:Efficiency}
 
-\subsection{Efficiency correction}
+In the introduction of the chapter is described the efficiency correction and the efficiency definition in the \textbf{Equation} \ref{eq:Analysis:efficiency}. The efficiency correction consist in to divide the unfolded distribution by the efficiency of each bin. It can be described as follow for the 1D analysis:
+
+\begin{equation}
+    N_i = \frac{\lambda_i}{\epsilon_i}
+    \label{eq:Analysis:Efficiency:1DEfficiencyCorrection}
+\end{equation}
+
+where $N_i$ is the number of signal events in the bin $i$, $\lambda_i$ is the unfolded events on $i$ bin and $\epsilon_i$ is the value of the efficiency for the $i$ bin. In the case of the 2D analysis we obtain the following relation: 
+
+\begin{equation}
+    N_{ij} = \frac{\rho_{ij}}{\epsilon_{ij}}
+    \label{eq:Analysis:Efficiency:2DEfficiencyCorrection}
+\end{equation}
+
+where $N_{ij}$ is the number of signal events in the bin $i,j$, $\rho_i$ is the unfolded events on $i,j$ bin and $\epsilon_{ij}$ is the value of the efficiency for the $i,j$ bin.
+In the \textbf{Figures} \ref{fig:Analysis:Unfolding:1DEfficiencyenu}-\ref{fig:Analysis:Unfolding:1DEfficiencywexp} and \ref{fig:Analysis:Unfolding:2DEfficiencyptmu_true_vs_tpi_true}-\ref{fig:Analysis:Unfolding:2DEfficiencytpi_true_vs_enu_true} the efficiency histograms for the 1D and 2D analysis, respectively, are shown. 
+\subsection{Efficiency histograms}
+\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
+%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
+    \ifthenelse{\equal{\var}{enu}}{
+      \renewcommand{\NewVar}{E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{mixtpi}}{
+      \renewcommand{\NewVar}{T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
+      \renewcommand{\NewVar}{\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu}}{
+      \renewcommand{\NewVar}{P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu}}{
+      \renewcommand{\NewVar}{P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{pzmu}}{
+      \renewcommand{\NewVar}{P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetamu_deg}}{
+      \renewcommand{\NewVar}{\theta_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{q2}}{
+      \renewcommand{\NewVar}{Q^2}
+    }{}
+    \ifthenelse{\equal{\var}{wexp}}{
+      \renewcommand{\NewVar}{W_{exp}}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/Chapter4/Efficiency/Efficiency_\var_true.png}
+        \caption{$\NewVar$ 1D Efficiency histogram.}
+        \label{fig:Analysis:Unfolding:1DEfficiency\var}
+    \end{figure}  
+}
+
+%\foreach \var in {loW,midW,hiW}{ 
+\foreach \var in  {ptmu_true_vs_tpi_true,tpi_true_vs_ptmu_true,ptmu_true_vs_pzmu_true,pzmu_true_vs_ptmu_true,tpi_true_vs_pmu_true,pmu_true_vs_tpi_true,thetapi_deg_true_vs_tpi_true,tpi_true_vs_thetapi_deg_true,enu_true_vs_tpi_true,tpi_true_vs_enu_true}{
+%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
+
+    \ifthenelse{\equal{\var}{pzmu_true_vs_ptmu_true}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_true_vs_thetapi_deg_true}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_true_vs_pmu_true}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_true_vs_tpi_true}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_true_vs_pzmu_true}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_true_vs_tpi_true}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_true_vs_tpi_true}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_true_vs_ptmu_true}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_true_vs_enu_true}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_true_vs_tpi_true}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/Chapter4/Efficiency/2D_Efficiency_\var__BWN.png}
+        \caption{$\NewVar$ 2D Efficiency histograms}
+        \label{fig:Analysis:Unfolding:2DEfficiency\var}
+    \end{figure}  
+}
+
+\pagebreak
+%++++++++++++++++++++++++++++++++++++++
+%     Normalization 
+%++++++++++++++++++++++++++++++++++++++
+\section{Normalization}
+\label{Cap:Analysis:Normalization}
+
+The normalization is the last part of the procedure to obtain the cross section. The normalization is obtained dividing the efficiency corrected distributions by the number of \textit{Protons on target} (POT), the integrated flux, the number of targets and the bin width in the order to obtain the differential cross section.  
+
+\begin{table}[!h]
+    \centering
+    \begin{tabular}{c|c}
+        Data POT & 1.05689e+21 \\
+        MC POT & 4.88781e+21 \\
+        Integrated flux & 6.24321e-08 \\
+        Number of nucleons & 3.47403e+30
+    \end{tabular}
+    \caption{Values of the normalization factors for the tracker region defined in the signal definition.}
+    \label{tab:my_label}
+\end{table}
+
+The number of nucleons is obtained only for the fiducial volume in the tracker region. The error associated to this calculation is reported in the \textbf{Section} \textcolor{red}{Agregar la seccion que hablar'a de los errores}.
+
+The simulated flux energy distribution is integrated from 0 GeV to 100 GeV to obtain the integrated flux that it is normalized by the POT. The flux error propagation is also explained in the \textbf{Section} \textcolor{red}{Agregar seccion que habla sobre los errores.}
+
+
+
+
+
+
+

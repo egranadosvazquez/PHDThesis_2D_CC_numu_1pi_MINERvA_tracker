@@ -87,7 +87,10 @@
 \usepackage{rotating}
 \usepackage{forloop}
 \usepackage{etoolbox}
+\usepackage{colortbl}
+\usepackage{xcolor}
 \usepackage{pgffor}
+\usepackage{makecell}
 %\spanisdecimal{.}
 \RequirePackage[colorlinks=true, allcolors=black]{hyperref}
 \RequirePackage[fixlanguage]{babelbib}
@@ -95,8 +98,9 @@
 
 \renewcommand{\mtctitle}{Content}
 
+%% Some variable definitions
 \newcommand{\NewVar}{NoVar}
-
+\newcommand{\Binning}{[]}
 \def\crest#1
 {
 	\def\@crest{#1}
