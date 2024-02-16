@@ -399,31 +399,182 @@ The ODU has as main goal to separate physically the signal from adjacent scintil
 
 Each optical box has two inputs for the light injection system (LI). This system consist in a light box that produce a blue pulsed light that is sent by two clear optical cables to each optical boxes, inside of the optical boxes the light is distributed uniformly over all the PMT pixels. The LI system turns on during ones after each beam spill. In this test the gain of the PMTs is measured and is used to monitoring the gain of the PMTs dearly. 
 
-The output of the PMTs are connected to an electronic board know as front-end board (FEB). This electronic board digitize the analogical height and timing pulse that comes from the PMTs, provides a high voltage (HV) to the PMT and it send the digitized information to the Data Acquisition System (DAQ). 
+The output of the PMTs is connected to an electronic board known as the front-end board (FEB). This electronic board digitizes the analog signal's height and timing pulses that come from the PMTs, provides high voltage (HV) to the PMT, and sends the digitized information to the Data Acquisition System (DAQ). 
 
 \begin{figure}
     \centering
     \includegraphics{Figures/Chapter2/OpticalSystem.jpg}
     \caption{Scheme that shows the meanly components of the optical system. It shows how the light travels from the plastic scintillator strips to the optical box. Figure from \cite{ALIAGA2014130}.}
-    \label{fig:enter-label}
+    \label{fig:MnvExp:MnvDetector:OpticalSystem}
 \end{figure}
-
-\subsection{Calibration}
-\label{Cap:MnvExp:MnvDetector:Calibration}
-
-\subsection{Data Reconstruction}
-\label{Cap:MnvExp:MnvDetector:DataReconstruction}
-
-\subsubsection{Untracked pions reconsttruction}
-\label{Cap:MnvExp:MnvDetector:DataReconstruction:Untrackedpions}
-\textcolor{red}{Hablar sobre la reconstruccion para los untracked pions}
 
 \subsection{Data Acquisition System }
 \label{Cap:MnvExp:MnvDetector:DAQ}
 
-The Data Acquisition System has a main roll collect all the information generated in the neutrino interaction and save it. 
+The Data Acquisition System has a main roll collect all the information generated in the neutrino interaction and save it. After that the light is produced in the plastic scintillator strips, is explained in the \textbf{Subsection} \ref{Cap:MnvExp:MnvDetector:ActiveTrackingPlanes}, the light is carried by the optical cables to the optical boxes, where the light is transform into an electrical signal by the PMTs. This signal is passed to the a FEB which has six Application-Specific Integrated Circuit (ASiC) chips (TriP-t chips)\cite{osti_1012682} controlled by a Field-Programmable Gate Array (FPGA) used to digitize the analog signal from the PMTs and storage the information. Each PMT sent the information of 64 channels to one FEB, then this FEB is connected to a readout chain that is communicated to a VME\cite{VMEModule} module called Chain Read Out Controller (CROC). A chain had no more of 10 FEBs connected. The CROCs received the timing and trigger signal from the CROC Interface Module (CRIM) which is synchronized to the FNAL Main Injector. Each neutrino beam spill has a duration of 10 $\mu$s and the readout system captures information form the detector during 16 $\mu$s, it starts to take data 0.5 $\mu$s before the neutrino spill arrives and 5.5 $\mu$s after the neutrino spill pass throughout the detector. This time of 16 $\mu$s is denominated a time gate. At the end of the gate, the readout system collects the data to the readout computer for archival and monitoring process.
 
-After that the light is produced in the plastic scintillator strips, is explained in the \textbf{Subsection} \ref{Cap:MnvExp:MnvDetector:ActiveTrackingPlanes}, the light is carried by the 
+When a particle produces scintillation in a plastic strip, the information of this event is stored as \textit{hits}. These hits are localized by a timestamp relative to the start of a gate. To be considered a hit, all signals must pass a threshold fixed for each discriminator. If the signal passes the threshold, the total signal is integrated, and this integrated signal is correlated to the deposited energy of the particle in the strip. Each timestamp has a time resolution of 2.35 ns. 
+
+A detailed description of the DAQ is given in \cite{DAQPERDUE2012179}.
+
+\subsection{Calibration}
+\label{Cap:MnvExp:MnvDetector:Calibration}
+
+The calibration of the detector consist in to series of procedures used to convert the raw analog-to-digital conversion (ADC) information and convert it on energy hits. The energy hits gives the energy deposited by the particle in the scintillator strip. 
+
+
+
+The ADC takes the analog signal that comes from the PMT and transform it in a digital signal. To measure the deposited energy of the particle in the strip, there are three effects that must be considered from the ADC. The effects are:
+
+\begin{itemize}
+    \item Photons attenuation for their travel in the weight light shifting fiber until the end of the plastic strip. 
+    \item Photons attenuation for their travel in the clear optical fibers.
+    \item The PMT gain per photo-electron produced for the multiplicative effect in the PMT. 
+    \item The ADC conversion process. 
+\end{itemize}
+
+Considering that the effects described above are the most significant, the following expression is used to measure the deposited energy per particle in the scintillator strip \textit{i}: 
+
+\begin{equation}
+    E_i(t) = (ADC_i(t) - Ped_i(t)) \times \frac{FEB_i \times \eta^{Atten}_i \times S_i(t) \times C(t)}{G_i(t)},
+    \label{eq:DepositedEnergy}
+\end{equation}
+
+where $Ped$ is the noise pedestal for the PMT, the $FEB$ is the ACD conversion gain factor used, $\eta^{atten}$ is the photons attenuation due the strip, $S$ is the correction factor for each strip, $C$ is the time dependent overall energy scale constant for the whole detector and $G$ is the gain from the PMT.
+
+\subsubsection{Ex situ calibrations}
+\label{Cap:MnvExp:MnvDetector:Calibration:ExSitu}
+The ex situ calibration is related to all the measurements made before the detector assemble. These were made to have information about the components of the detector, this information is used to make the energy reconstruction. 
+
+The ex situ calibrations are:
+
+\begin{itemize}
+    \item \textbf{Module mapper:} The goal of this calibration consist in to measure the photons attenuation in the plastic scintillator and the connections between the optical fibers. The measurements were made using a scanner with a $^{137}Cs$ radioactive source measuring how the lignt was attenuated for different positions in the plane for each strip. This information is used latter to make corrections using the tracking algorithm to determine the attenuation depending the position where the particle pass.
+    \item \textbf{PMT testing:} In this test is determined the efficiency, linearity, pixel-to-pixel gain variations, dark noise and cross talk. This test is made before to install the PMT in the optical boxes. These tests consist it to use a blue light applied to a WLS fiber that is used to illuminate a group of PMT simultaneously each one mounted in a cookie in a framework.
+    \item \textbf{FEB response measurements:} Each FEB contains 6 TriP-t ASIC chips. These are used to provide a low, medium and high gain for each PMT channel. In this part of the calibration each FEB is tested for burn-in, HV control, input/output functionality, discriminator, digital control, charge calibration, and cross-talk test measurements. A full description of these test can be found in \cite{MINERvA}.    
+\end{itemize}
+
+
+\subsubsection{In situ calibrations and monitoring}
+\label{Cap:MnvExp:MnvDetector:Calibration:InSitu}
+
+The in situ calibrations are made when the detector is already assembled. Some of these calibration measurements are made dearly during a normal day of data acquisition. It is because the detector is assembled to stay taking data during several years and the conditions of the material can vary as function of time. The in situ calibration procedures are described in the following bullets:
+
+\begin{itemize}
+    \item \textbf{Pedestal monitoring:} The pedestal is a reference point used to subtract the noise in each detector channel. Pedestals are determined during periods of time when the beam is absent, typically in a special subrun where 750 gates from each channel are collected. This information captures the noise from electronic sources, cosmic rays, radioactivity, and the PMT's dark counts.
+
+    During pedestal monitoring, there are gates that show an increase due to the interaction of cosmic rays, environmental radiation, or electronic noise, the \textbf{Figure} \ref{fig:MnvExp:MnvDetector:Calibration:InSitu:Pedestal} shows an example of these kind of events. For these events, they are removed from the pedestal measurement based on Peirce's Criterion \cite{PeirceCriterion}. The pedestal distribution is obtained using the mean and the RMS.
+
+    \begin{figure}
+        \centering
+        \includegraphics{Figures/Chapter2/Pedestal.jpg}
+        \caption{Example of a pedestal distribution for a channel. In this case the the signal is above the normal pedestal distribution, this kind of gates are removed from the pedestal calculation. Figure from \cite{MINERvA}}
+        \label{fig:MnvExp:MnvDetector:Calibration:InSitu:Pedestal}
+    \end{figure}
+    The pedestal subtraction, the mean pedestal is subtracted to the mean and remove the hits that do not pass the hit threshold.
+
+    
+    \item \textbf{PMT gain monitoring:} This consist in to inject light pulses (0.5 Hz) directly to the PMT using the LI system. This is turned on ones after each beam spill. This measurements are used to monitor the gain fluctuations of the PMTs. 
+    
+    The PMT gain is obtained using the data obtained when the LI system is turned on. The gain $g$ for a pixel is given by:
+
+    \begin{equation}
+        g=\frac{\Bar{Q}}{e\lambda},
+        \label{eq:MnvExp:MnvDetector:Calibration:InSitu:Gain}
+    \end{equation}
+    where $\Bar{Q}$ is the mean of the anode charge distribution after the pedestal subtraction, $e$ is the electron charge and $\lambda$ is the average number of PEs arriving to the first dynode. The equation \ref{eq:MnvExp:MnvDetector:Calibration:InSitu:Gain} does not consider the effect due the quantum or collection efficiency of the PMT. The way that these parameters are included to gain calculation is assuming that the noise is well described by a Gaussian distribution and the dynode amplifies the charge following a Poison distribution can be obtained an expression that gives the gain as function of the variance of the noise and the variance of the distribution charge distribution.
+    
+    The average gain of a photomultipliers are normally  The variations in the gain measurement has a typical error of 1\%. 
+    
+    
+    \item \textbf{Scintillator plane alignment:} The scintillator strips are hold mechanically in the detector. During the assemble of the detector small variations in the position of the planes or plastic strips. The calibration of the detector caused by the small variations uses the trajectory of the rock muons comparing the energy deposition on their points of intersection considering that each stripe has a base of 33 mm. 
+
+    Using the information of the deposited energy from the rock-muons in the plastic scintillators it is possible to measure the alignment in the XY plane and the rotational alignment respect to the Z axis. To measure the XY alignment is used the average deposited energy in the strip to determine the position of it respect the expected position. For the rotational position it can be given for the deposition of energy along to the strip for different rock-muon allowing a mapping of the strip, The \textbf{Figure} \ref{fig:MnvExp:MnvDetector:Calibration:InSitu:Alignment} shows an example of the alignment process. The precision of the alignment correction is 0.3 mm and 0.5 mrad on average.
+    
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.6]{Figures/Chapter2/AlignmentProfile.jpg}
+        \caption{Image that shows two examples of alignment fits. The position respect to the XY axis is determined using average of the energy deposited in the strip, as is shown in  the left column. For the rotational parameter it depends of the shift in the longitudinal position.}
+        \label{fig:MnvExp:MnvDetector:Calibration:InSitu:Alignment}
+    \end{figure}
+
+    \item \textbf{Relative strip-to-strip response variations:} This calibration step is correlated to the effects of the variation between the scintillator strips, it could be for fabrication imperfections of couplings between the optical instrumentation. This variations are corrected applying a correction factor to the deposited energy per strip. Normally these are obtained using the rock-muon data. 
+    This procedure uses the truncated mean energy deposited per unit of length, after the average of the truncated mean energy is obtained for the hole plane. 
+
+    The constant $C_i$\cite{MINERvA} for a strip $i$ is defined by:
+    \begin{equation}
+        C_i = \frac{\frac{1}{x_i}}{\frac{1}{N}\sum_j\frac{1}{x_j}}
+        \label{eq:MnvExp:MnvDetector:Calibration:InSitu:ResponsStripConstant}
+    \end{equation}
+
+    where $x_i$ corresponds to the truncated mean energy in the strip $i$, N is the number of good channels and $j$ is the good channels index. 
+
+    For the plane $j$ the constant $C^j$ \cite{MINERvA} is obtained by:
+
+    \begin{equation}
+        C^j = \frac{\frac{E^j}{p^j}}{\frac{1}{n}\sum_k\frac{E^k}{p^k}}
+        \label{eq:MnvExp:MnvDetector:Calibration:InSitu:ResponsPlaneConstant}
+    \end{equation}
+    where $E^j$ is the average of the truncate mean energy for the plane $j$, $p^j$ is the fitted peak energy for a plane $j$, n is the number of planes and $k$ runs over all the planes.   
+    
+    Finally, the correction is made multiplying the it energy by the constant found previously.   
+    \item \textbf{Absolute energy scale determination:} Due the muon is a minimum ionizing particle ans it shows a well understood energy loos in plastic shintillator, it is used to determine an absolute energy scale called \textit{muon equivalent unit} (MEU). This factor is obtained by the use of the rock-muon data and simulation. 
+
+    The rock-muons used have to pass throughout MINER$\nu$A and MINOS detectors, this with the aim to reconstruct the muon energy and momentum the best as possible. Giving as seed the momentum of the muon and the interaction position of the rock muon to the simulation it will produce a similar track. Then the clusters form the reconstruction in dta and simulation are compared. Using the information from data ans simulation the peak energy per unit of length is find. The MEU factor is obtained multiplying the previous MEU factor by the ratio of the peaks of the reconstructed cluster energy distributions ($\frac{E_{sim}}{E_{Data}}$), divided by the efficiency of the reconstructed energy in the simulation.
+
+    This calibration allows to have an agreement between the data and simulation energy reconstruction an PEs. The usual value of this MEU factor is 0.08 MeV/PE.
+    \item \textbf{Timing calibration:} This calibration step consists in the correction of the time offsets. Th time offsets are produced meanly for the following reasons:
+    \begin{itemize}
+        \item The transport of the light from the plastic scintillator to the PMT.
+        \item The processing time required by the electronics tho process the signal and sent it along the cables and the chain.  
+        \item The \textit{time slewing}, it is correlated to the time that take to the scintillator decays.
+    \end{itemize}
+
+    The calibration is made using the rock-muon's track information. For this the average time-of-flight of the muon is calculated and the hit time along to the muon track is compared with it as reference, obtaining the in this way the total offset. The next step is to find the time slewing which is find as function of the PE, the \textbf{Figure} \ref{fig:MnvExp:MnvDetector:Calibration:InSitu:SlewingFunc} shows the measured time slewing example. The offset due the transport of light is estimated considering the light velocity in the materials and the lengths of the fibers. The time offset for the electronics is calculated using the difference between the reference muon track and the hit time.  
+    \begin{figure}
+        \centering
+        \includegraphics{Figures/Chapter2/SlewingFunction.jpg}
+        \caption{Plot with the time slewing as function of the hit PE for a single strip. Figure from \cite{MINERvA}}
+        \label{fig:MnvExp:MnvDetector:Calibration:InSitu:SlewingFunc}
+    \end{figure}
+\end{itemize}
+
+\pagebreak
+
+
+\subsection{Data Reconstruction}
+\label{Cap:MnvExp:MnvDetector:DataReconstruction}
+
+After to calibrate the data, the next step is to reconstruct the events. It consists in to use the energy hits to reconstruct the trajectories, energy, momentum and hypothesize about the particle identification. 
+
+\subsubsection{Time Slicing}
+\label{Cap:MnvExp:MnvDetector:DataReconstruction:TimeSlicing}
+
+In a gate, multiple neutrino events can be produced. To separate the different interactions in a gate an algorithm separates the activity of the detector in groups. This groups does not need to have spatial relation, these groups are called \textit{time slices}. The duration of this time slices are typically bellow to the 100 ns. Typically a time slice contains only one neutrino event, with the exception of the michel electrons that are produced by the decay of stooped muons in the detector, these are observed some time slices after the interaction. For this reason the gate continues open 5.5 $\mu$s after the neutrino beam spill ends. 
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=1]{Figures/Chapter2/OneGate.jpg}
+    \caption{Image that shows activity in the detector for a readout gate. In the image the colored groups of activity are represents a time slice. Figure taken from \cite{MINERvA}}
+    \label{fig:MnvExp:MnvDetector:CalibrationOneGate}
+\end{figure}
+
+\subsubsection{Muon Reconstruction}
+\label{Cap:MnvExp:MnvDetector:DataReconstruction:MuonReconstruction}
+\subsubsection{Clustering}
+\label{Cap:MnvExp:MnvDetector:DataReconstruction:Clustering}
+\subsubsection{Track Reconstruction}
+\label{Cap:MnvExp:MnvDetector:DataReconstruction:TrackReconstruction}
+\subsubsection{Vertex Reconstruction}
+\label{Cap:MnvExp:MnvDetector:DataReconstruction:VertexReconstruction}
+\subsubsection{Energy Reconstruction}
+\label{Cap:MnvExp:MnvDetector:DataReconstruction:ENergyReconstruction}
+
+\subsubsection{Untracked pions reconsttruction}
+\label{Cap:MnvExp:MnvDetector:DataReconstruction:Untrackedpions}
+
+
+ 
 
 
 
