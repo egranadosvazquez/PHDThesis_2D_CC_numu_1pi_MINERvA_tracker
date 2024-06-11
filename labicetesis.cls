@@ -95,7 +95,7 @@
 \RequirePackage[colorlinks=true, allcolors=black]{hyperref}
 \RequirePackage[fixlanguage]{babelbib}
 %\selectbiblanguage{spanish}
-
+%\usepackage{feynmp-auto}
 \renewcommand{\mtctitle}{Content}
 
 %% Some variable definitions
@@ -385,7 +385,7 @@
 
 \AtBeginDocument
 {
-	\renewcommand{\tablename}{Tabla}          % cambia la palabra cuadro por tabla
+	\renewcommand{\tablename}{Table}          % cambia la palabra cuadro por tabla
 	\renewcommand{\listtablename}{Table index} 
 	\lstset{language=C}
 }
