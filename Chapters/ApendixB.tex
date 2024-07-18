@@ -1,554 +1,546 @@
-\chapter{Systematic Uncertainties 1D Analysis Results}
-\label{Ap:Systematics1D}
- This appendix contains the cross section systematic error breakdown for all the categories for the 1D analysis. 
-\section{Cross Section Models Uncertainties}
-\label{Ap:Systematics1D:CrosSectionModels}
+\chapter{2D Cross Section Tables}
+\label{Ap:XsecTables2D}
 
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_Cross_Section_Models.png}
-        \caption{$\NewVar$ 1D Cross section model.}
-        \label{fig:AppendixB:CrossSecModel:1DCrossSection\var}
-    \end{figure}  
-}
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_CCQE.png}
-        \caption{$\NewVar$ 1D cross section systematic error breakdown for the CCQE models.}
-        \label{fig:AppendixB:CrossSecModel:1DCrossSectionCCQE\var}
-    \end{figure}  
-}
+%=========pzmu ptmu
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{0 MeV $ < P^T_\mu < $ 150 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+1500.0 - 2500.0 & 32.772e-06 & 39.83e-06 & 7.21e-06 & 0.22 & 5.28e-06 & 0.16 & 4.91e-06 & 0.15\\ \hline
+2500.0 - 3750.0 & 73.533e-06 & 77.92e-06 & 8.81e-06 & 0.12 & 6.00e-06 & 0.08 & 6.45e-06 & 0.09\\ \hline
+3750.0 - 4750.0 & 85.931e-06 & 99.80e-06 & 10.96e-06 & 0.13 & 6.97e-06 & 0.08 & 8.46e-06 & 0.10\\ \hline
+4750.0 - 5250.0 & 109.74e-06 & 115.12e-06 & 14.10e-06 & 0.13 & 10.03e-06 & 0.09 & 9.92e-06 & 0.09\\ \hline
+5250.0 - 8250.0 & 62.605e-06 & 81.826e-06 & 5.76e-06 & 0.09 & 3.37e-06 & 0.05 & 4.67e-06 & 0.08\\ \hline
+8250.0 - 20000.0 & 3.142e-06 & 3.9636e-06 & 0.54e-06 & 0.17 & 0.42e-06 & 0.14 & 0.34e-06 & 0.11\\ \hline
+    \end{tabular}
+    \caption{Double differential cross section measured in $P^{||}_\mu$ for 0 $ < P^T_\mu < $ 150 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$. }
+    \label{tab:ApdxA:XSecTable2Dpzmuptmu1}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{150 MeV $ < P^T_\mu < $ 300 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+1500.0 - 2500.0 & 133.31e-06 & 146.10e-06 & 25.49e-06 & 0.19 & 12.81e-06 & 0.10 & 22.04e-06 & 0.17\\ \hline
+2500.0 - 3750.0 & 249.65e-06 & 259.75e-06 & 24.66e-06 & 0.10 & 13.32e-06 & 0.05 & 20.75e-06 & 0.08\\ \hline
+3750.0 - 4750.0 & 302.03e-06 & 325.30e-06 & 33.63e-06 & 0.11 & 15.91e-06 & 0.05 & 29.80e-06 & 0.10\\ \hline
+4750.0 - 5250.0 & 314.65e-06 & 366.89e-06 & 31.52e-06 & 0.10 & 18.69e-06 & 0.06 & 25.38e-06 & 0.08\\ \hline
+5250.0 - 8250.0 & 222.40e-06 & 254.93e-06 & 16.21e-06 & 0.07 & 7.23e-06 & 0.03 & 14.51e-06 & 0.07\\ \hline
+8250.0 - 20000.0 & 11.90e-06 & 11.99e-05 & 1.42e-06 & 0.12 & 0.91e-06 & 0.08 & 1.07e-06 & 0.09\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $P^{||}_\mu$ for 150 $ < P^T_\mu < $ 300 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dpzmuptmu2}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{300 MeV $ < P^T_\mu < $ 400 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+1500.0 - 2500.0 & 251.91e-06 & 243.92e-06 & 42.42e-06 & 0.17 & 27.97e-06 & 0.11 & 31.90e-06 & 0.13\\ \hline
+2500.0 - 3750.0 & 368.31e-06 & 402.82e-06 & 39.02e-06 & 0.11 & 24.13e-06 & 0.07 & 30.66e-06 & 0.08\\ \hline
+3750.0 - 4750.0 & 494.52e-06 & 501.19e-06 & 48.87e-06 & 0.10 & 28.59e-06 & 0.06 & 39.63e-06 & 0.08\\ \hline
+4750.0 - 5250.0 & 495.73e-06 & 561.92e-06 & 62.43e-06 & 0.13 & 34.00e-06 & 0.07 & 52.36e-06 & 0.11\\ \hline
+5250.0 - 8250.0 & 337.79e-06 & 376.61e-06 & 25.16e-06 & 0.07 & 12.81e-06 & 0.04 & 21.66e-06 & 0.06\\ \hline
+8250.0 - 20000.0 & 16.80e-06 & 17.54e-06 & 2.18e-06 & 0.13 & 1.43e-06 & 0.09 & 1.65e-06 & 0.10\\ \hline
 
 
 
+    \end{tabular}
+    \caption{Double differential cross section measured in $P^{||}_\mu$ for 300 $ < P^T_\mu < $ 400 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2$/MeV*MeV/nucleon.}
+    \label{tab:ApdxA:XSecTable2Dpzmuptmu3}
+\end{table}
 
-%\subsection{Coherent-Diffractive Cross Section Models Breakdown Uncertainties}
-%\label{Ap:Systematics1D:CrosSectionModels:CoherentDiffractive}
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
 
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_Coherent-Diffractive.png}
-        \caption{$\NewVar$ 1D cross section systematic error breakdown for the Coherent-Diffractive models.}
-        \label{fig:AppendixB:CrossSecModel:1DCrossSectionCoherent-Diffractive\var}
-    \end{figure}  
-}
+        \hline
+        \multicolumn{9}{c}{400 MeV $ < P^T_\mu < $ 550 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+1500.0 - 2500.0 & 347.87e-06 & 314.72e-06 & 54.54e-06 & 0.16 & 34.66e-06 & 0.10 & 42.12e-06 & 0.12\\ \hline
+2500.0 - 3750.0 & 468.65e-06 & 486.17e-06 & 56.26e-06 & 0.12 & 26.22e-06 & 0.06 & 49.78e-06 & 0.11\\ \hline
+3750.0 - 4750.0 & 564.84e-06 & 598.87e-06 & 58.45e-06 & 0.10 & 28.71e-06 & 0.05 & 50.91e-06 & 0.09\\ \hline
+4750.0 - 5250.0 & 625.13e-06 & 669.74e-06 & 67.13e-06 & 0.11 & 38.75e-06 & 0.06 & 54.82e-06 & 0.09\\ \hline
+5250.0 - 8250.0 & 371.54e-06 & 431.27e-06 & 32.73e-06 & 0.09 & 12.29e-06 & 0.03 & 30.33e-06 & 0.08\\ \hline
+8250.0 - 20000.0 & 18.35e-06 & 19.54e-06 & 2.48e-06 & 0.14 & 1.31e-06 & 0.07 & 2.10e-06 & 0.11\\ \hline
 
 
+    \end{tabular}
+    \caption{Double differential cross section measured in $P^{||}_\mu$ for 400 $ < P^T_\mu < $ 550 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dpzmuptmu4}
+\end{table}
 
 
-%\subsection{DIS and hadronization Cross Section Models Breakdown Uncertainties}
-%\label{Ap:Systematics1D:CrosSectionModels:DISHadronization}
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
 
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_q2_Frac__1Pi_DIS-Hadronization.png}
-        \caption{$\NewVar$ 1D cross section systematic error breakdown for the DIS and hadronization models.}
-        \label{fig:AppendixB:CrossSecModel:1DCrossSectionDISHadronization\var}
-    \end{figure}  
-}
+        \hline
+        \multicolumn{9}{c}{550 MeV $ < P^T_\mu < $ 650 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+1500.0 - 2500.0 & 252.68e-06 & 299.13e-06 & 58.47e-06 & 0.23 & 46.334e-06 & 0.18 & 35.664e-06 & 0.14\\ \hline
+2500.0 - 3750.0 & 443.65e-06 & 484.28e-06 & 67.148e-06 & 0.15 & 38.244e-06 & 0.086 & 55.193e-06 & 0.12\\ \hline
+3750.0 - 4750.0 & 603.26e-06 & 599.4e-06 & 74.513e-06 & 0.12 & 41.745e-06 & 0.069 & 61.721e-06 & 0.1\\ \hline
+4750.0 - 5250.0 & 596.65e-06 & 667.76e-06 & 84.665e-06 & 0.14 & 49.833e-06 & 0.084 & 68.446e-06 & 0.11\\ \hline
+5250.0 - 8250.0 & 368.06e-06 & 411.12e-06 & 40.594e-06 & 0.11 & 16.695e-06 & 0.045 & 37.002e-06 & 0.1\\ \hline
+8250.0 - 20000.0 & 17.03e-06 & 18.54e-06 & 2.6104e-06 & 0.15 & 1.4503e-06 & 0.085 & 2.1704e-06 & 0.13\\ \hline
 
 
-%\subsection{Elastic Cross Section Models Breakdown Uncertainties}
-%\label{Ap:Systematics1D:CrosSectionModels:Elastic}
-
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_Elastic.png}
-        \caption{$\NewVar$ 1D cross section systematic error breakdown for the Elastic interaction models.}
-        \label{fig:AppendixB:CrossSecModel:1DCrossSectionElastic\var}
-    \end{figure}  
-}
-\clearpage
-
-%\subsection{MnvTunes Cross Section Models Breakdown Uncertainties}
-%\label{Ap:Systematics1D:CrosSectionModels:MnvTunes}
-
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_MnvTunes.png}
-        \caption{$\NewVar$ 1D cross section systematic error breakdown for the MnvTunes models.}
-        \label{fig:AppendixB:CrossSecModel:1DCrossSectionMnvTunes\var}
-    \end{figure}  
-}
-\clearpage
+    \end{tabular}
+    \caption{Double differential cross section measured in $P^{||}_\mu$ for 550 $ < P^T_\mu < $ 650 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dpzmuptmu5}
+\end{table}
 
 
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
 
-%\subsection{No Resonant pion production Cross Section Models Breakdown Uncertainties}
-%\label{Ap:Systematics1D:CrosSectionModels:NoRESpi}
+        \hline
+        \multicolumn{9}{c}{650 MeV $ < P^T_\mu < $ 2000 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+1500.0 - 2500.0 & 2.069e-05 & 2.223e-05 & 5.739e-06 & 0.2773 & 4.492e-06 & 0.2171 & 5.739e-06 & 0.2773\\ \hline
+2500.0 - 3750.0 & 0.0001187 & 9.715e-05 & 1.519e-05 & 0.1279 & 7.027e-06 & 0.05919 & 1.519e-05 & 0.1279\\ \hline
+3750.0 - 4750.0 & 0.0001922 & 0.0001475 & 2.288e-05 & 0.119 & 8.472e-06 & 0.04408 & 2.288e-05 & 0.119\\ \hline
+4750.0 - 5250.0 & 0.0001591 & 0.0001569 & 2.369e-05 & 0.1488 & 9.399e-06 & 0.05906 & 2.369e-05 & 0.1488\\ \hline
+5250.0 - 8250.0 & 7.95e-05 & 8.699e-05 & 1.355e-05 & 0.1705 & 2.73e-06 & 0.03434 & 1.355e-05 & 0.1705\\ \hline
+8250.0 - 20000.0 & 5.185e-06 & 4.15e-06 & 9.237e-07 & 0.1781 & 3.558e-07 & 0.06863 & 9.237e-07 & 0.1781\\ \hline
 
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_NonRESPi.png}
-        \caption{$\NewVar$ 1D cross section systematic error breakdown for the no resonant pion models.}
-        \label{fig:AppendixB:CrossSecModel:1DCrossSectionNoRESpi\var}
-    \end{figure}  
-}
+    \end{tabular}
+    \caption{Double differential cross section measured in $P^{||}_\mu$ for 650 $ < P^T_\mu < $ 2000 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dpzmupimu6}
+\end{table}
 
 
 
 
-%\subsection{Resonant pion production Cross Section Models Breakdown Uncertainties}
-%\label{Ap:Systematics1D:CrosSectionModels:RESpi}
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_RESPi.png}
-        \caption{$\NewVar$ 1D cross section systematic error breakdown for the Resonant pion production models.}
-        \label{fig:AppendixB:CrossSecModel:1DCrossSectionRESpi\var}
-    \end{figure}  
-}
-
-\pagebreak
-
-\section{Genie FSI Uncertainties}
-\label{Ap:Systematics1D:FSI}
-
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_GENIE_FSI.png}
-        \caption{$\NewVar$ 1D cross section systematic error breakdown for the FSI models.}
-        \label{fig:AppendixB:CrossSecModel:1DFSImodel\var}
-    \end{figure}  
-}
-\clearpage
+%======tpi vs thetapi
 
 
 
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
 
-%\subsection{CCQE Cross Section Models Breakdown Uncertainties}
-%\label{Ap:Systematics1D:CrosSectionModels:CCQE}
+        \hline
+        \multicolumn{9}{c}{0 deg $ < \theta_\pi < $ 15 deg}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 1.01e-02 & 0.96e-02 & 0.19e-02 & 0.19 & 0.12e-02 & 0.12 & 0.15e-02 & 0.15\\ \hline
+100.0 - 150.0 & 2.04e-02 & 1.76e-02 & 0.27e-02 & 0.13 & 0.17e-02 & 0.09 & 0.21e-02 & 0.10\\ \hline
+150.0 - 200.0 & 2.71e-02 & 2.42e-02 & 0.32e-02 & 0.12 & 0.24e-02 & 0.09 & 0.22e-02 & 0.08\\ \hline
+200.0 - 350.0 & 1.99e-02 & 2.12e-02 & 0.38e-02 & 0.19 & 0.19e-02 & 0.09 & 0.33e-02 & 0.17\\ \hline
 
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 0 $ <\theta_\pi < $ 15 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*deg/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpithetapi1}
+\end{table}
 
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
 
-\pagebreak
+        \hline
+        \multicolumn{9}{c}{15 deg $ < \theta_\pi < $ 30 deg}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 3.02e-02 & 3.27e-02 & 0.46e-02 & 0.15 & 0.19e-02 & 0.06 & 0.42e-02 & 0.14\\ \hline
+100.0 - 150.0 & 5.95e-02 & 5.27e-02 & 0.57e-02 & 0.10 & 0.27e-02 & 0.05 & 0.51e-02 & 0.09\\ \hline
+150.0 - 200.0 & 6.76e-02 & 6.08e-02 & 0.67e-02 & 0.10 & 0.36e-02 & 0.05 & 0.56e-02 & 0.08\\ \hline
+200.0 - 350.0 & 3.89e-02 & 5.41e-02 & 0.80e-02 & 0.20 & 0.24e-02 & 0.06 & 0.76e-02 & 0.20\\ \hline
 
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 15 $ < \theta_\pi < $ 30 deg. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*deg/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpithetapi2}
+\end{table}
 
-\section{Muon Uncertainties}
-\label{Ap:Systematics1D:Muon}
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
 
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_Muon.png}
-        \caption{$\NewVar$ 1D cross section systematic error breakdown for the associated muon kinematics measurements. }
-        \label{fig:AppendixB:CrossSecModel:1DMuon\var}
-    \end{figure}  
-}
-\clearpage
-
-
-
-\section{Pion Reconstruction Uncertainties}
-\label{Ap:Systematics1D:PionReconstruction}
-
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_Pion_Reconstruction.png}
-        \caption{$\NewVar$ 1D cross section systematic error breakdown for the associated pion reconstruction. }
-        \label{fig:AppendixB:CrossSecModel:1DPionReconstruction\var}
-    \end{figure}  
-}
-\clearpage
+        \hline
+        \multicolumn{9}{c}{30 MeV $ < \theta_\pi < $ 45 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 5.15e-02 & 5.81e-02 & 0.64e-02 & 0.12 & 0.25e-02 & 0.05 & 0.59e-02 & 0.12\\ \hline
+100.0 - 150.0 & 7.85e-02 & 7.73e-02 & 0.69e-02 & 0.09 & 0.30e-02 & 0.04 & 0.62e-02 & 0.08\\ \hline
+150.0 - 200.0 & 7.93e-02 & 8.25e-02 & 0.77e-02 & 0.10 & 0.38e-02 & 0.05 & 0.67e-02 & 0.08\\ \hline
+200.0 - 350.0 & 4.03e-02 & 7.61e-02 & 0.95e-02 & 0.23 & 0.27e-02 & 0.07 & 0.91e-02 & 0.22\\ \hline
 
 
-\section{Flux Uncertainties}
-\label{Ap:Systematics1D:Flux}
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 30 $ < \theta_\pi < $ 45 deg. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*deg/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpithetapi3}
+\end{table}
 
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_Flux.png}
-        \caption{$\NewVar$ 1D cross section systematic error breakdown for the associated to the neutrino flux.}
-        \label{fig:AppendixB:CrossSecModel:1DFlux\var}
-    \end{figure}  
-}
-\clearpage
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
 
-\section{Others Uncertainties}
-\label{Ap:Systematics1D:Others}
+        \hline
+        \multicolumn{9}{c}{45 MeV $ < \theta_\pi < $ 60 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 7.61e-02 & 7.82e-02 & 0.88e-02 & 0.12 & 0.34e-02 & 0.05 & 0.81e-02 & 0.11\\ \hline
+100.0 - 150.0 & 8.92e-02 & 9.03e-02 & 0.74e-02 & 0.08 & 0.33e-02 & 0.04 & 0.67e-02 & 0.08\\ \hline
+150.0 - 200.0 & 6.82e-02 & 9.24e-02 & 0.84e-02 & 0.12 & 0.38e-02 & 0.06 & 0.76e-02 & 0.11\\ \hline
+200.0 - 350.0 & 3.60e-02 & 8.96e-02 & 1.02e-02 & 0.28 & 0.29e-02 & 0.08 & 0.97e-02 & 0.27\\ \hline
 
-\foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
-%\foreach \var in  {enu_true,mixtpi_true,pmu_true,ptmu_true,pzmu_true,thetamu_deg_true,q2_true,wexp_true}{
-    \ifthenelse{\equal{\var}{enu}}{
-      \renewcommand{\NewVar}{E_\nu}
-    }{}
-    \ifthenelse{\equal{\var}{mixtpi}}{
-      \renewcommand{\NewVar}{T_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{mixthetapi_deg}}{
-      \renewcommand{\NewVar}{\theta_\pi}
-    }{}
-    \ifthenelse{\equal{\var}{pmu}}{
-      \renewcommand{\NewVar}{P_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{ptmu}}{
-      \renewcommand{\NewVar}{P^T_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{pzmu}}{
-      \renewcommand{\NewVar}{P^z_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{thetamu_deg}}{
-      \renewcommand{\NewVar}{\theta_\mu}
-    }{}
-    \ifthenelse{\equal{\var}{q2}}{
-      \renewcommand{\NewVar}{Q^2}
-    }{}
-    \ifthenelse{\equal{\var}{wexp}}{
-      \renewcommand{\NewVar}{W_{exp}}
-    }{}
-    \begin{figure}[!h]
-        \centering
-        \includegraphics[scale=0.28]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_Others.png}
-        \caption{$\NewVar$ 1D cross section systematic error breakdown. }
-        \label{fig:AppendixB:CrossSecModel:1DOther\var}
-    \end{figure}  
-}
-\clearpage
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 45 $ < \theta_\pi < $ 60 deg. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*deg/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpithetapi4}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{60 MeV $ < \theta_\pi < $ 76 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 10.85e-02 & 9.24-02 & 1.50e-02 & 0.14 & 0.60e-02 & 0.06 & 1.38e-02 & 0.13\\ \hline
+100.0 - 150.0 & 9.17e-02 & 9.81e-02 & 0.85e-02 & 0.09 & 0.39e-02 & 0.04 & 0.75e-02 & 0.08\\ \hline
+150.0 - 200.0 & 6.21e-02 & 9.60e-02 & 0.68e-02 & 0.11 & 0.37e-02 & 0.06 & 0.56e-02 & 0.09\\ \hline
+200.0 - 350.0 & 3.37e-02 & 8.08e-02 & 0.82-02 & 0.24 & 0.29e-02 & 0.09 & 0.76e-02 & 0.23\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 60 $ < \theta_\pi < $ 76 deg. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*deg/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpithetapi5}
+\end{table}
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{76 MeV $ < \theta_\pi < $ 108 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 11.06e-02 & 9.65e-02 & 1.08e-02 & 0.10 & 0.43e-02 & 0.04 & 0.99e-02 & 0.09\\ \hline
+100.0 - 150.0 & 11.31e-02 & 8.55e-02 & 0.98e-02 & 0.09 & 0.44e-02 & 0.04 & 0.88e-02 & 0.08\\ \hline
+150.0 - 200.0 & 7.21e-02 & 6.39e-02 & 0.95e-02 & 0.13 & 0.33e-02 & 0.05 & 0.89e-02 & 0.12\\ \hline
+200.0 - 350.0 & 2.38e-02 & 2.64e-02 & 0.32e-02 & 0.13 & 0.13e-02 & 0.05 & 0.29e-02 & 0.12\\ \hline
+
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 76 $ < \theta_\pi < $ 108 deg. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*deg/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpithetapi6}
+\end{table}
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{108 MeV $ < \theta_\pi < $ 136 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 11.81e-02 & 7.26e-02 & 1.12e-02 & 0.10 & 0.47e-02 & 0.04 & 1.02e-02 & 0.09\\ \hline
+100.0 - 150.0 & 5.06e-02 & 3.70e-02 & 0.41e-02 & 0.08 & 0.21e-02 & 0.04 & 0.35e-02 & 0.07\\ \hline
+150.0 - 200.0 & 1.05e-02 & 1.34e-02 & 0.28e-02 & 0.27 & 0.12e-02 & 0.12 & 0.25e-02 & 0.24\\ \hline
+200.0 - 350.0 & 0.09e-02 & 0.26e-02 & 0.06e-02 & 0.74 & 0.02e-02 & 0.33 & 0.06e-02 & 0.66\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 108 $ < \theta_\pi < $ 136 deg. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*deg/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpithetapi7}
+\end{table}
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{136 MeV $ < \theta_\pi < $ 180 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 4.40e-02 & 2.59e-02 & 0.40e-02 & 0.09 & 0.18e-02 & 0.041 & 0.35e-02 & 0.08\\ \hline
+100.0 - 150.0 & 1.53e-02 & 0.80e-02 & 0.16e-02 & 0.1 & 0.08e-02 & 0.055 & 0.14e-02 & 0.09\\ \hline
+150.0 - 200.0 & 0.23e-02 & 0.19e-02 & 0.08e-02 & 0.37 & 0.042e-02 & 0.19 & 0.07e-02 & 0.32\\ \hline
+200.0 - 350.0 & 0.04e-02 & 0.03e-02 & 0.02e-02 & 0.52 & 0.015e-02 & 0.38 & 0.01e-02 & 0.36\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 136 $ < \theta_\pi < $ 180 deg. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*deg/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpithetapi8}
+\end{table}
+
+%================pmu vs tpi
+
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{35 MeV $ < T_\pi < $ 100 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+1500.0 - 3000.0 & 1077.77e-06 & 834.603e-06 & 145.07e-06 & 0.13 & 69.83e-06 & 0.07 & 127.16e-06 & 0.12\\ \hline
+3000.0 - 4000.0 & 1843.66e-06 & 1617.14e-06 & 232.95e-06 & 0.13 & 97.71e-06 & 0.05 & 211.47e-06 & 0.11\\ \hline
+4000.0 - 5500.0 & 2470.99e-06 & 2108.97e-06 & 275.07e-06 & 0.11 & 85.61e-06 & 0.04 & 261.41e-06 & 0.11\\ \hline
+5500.0 - 7500.0 & 1761.97e-06 & 1577.67e-06 & 174.61e-06 & 0.10 & 57.53e-06 & 0.03 & 164.86e-06 & 0.09\\ \hline
+7500.0 - 10000.0 & 432.55e-06 & 354.26e-06 & 55.95e-06 & 0.13 & 23.80e-06 & 0.06 & 50.64e-06 & 0.12\\ \hline
+10000.0 - 13000.0 & 85.65e-06 & 64.54e-06 & 14.21e-06 & 0.17 & 10.51e-06 & 0.12 & 9.55e-06 & 0.11\\ \hline
+13000.0 - 20000.0 & 33.96e-06 & 21.53e-06 & 6.24e-06 & 0.18 & 4.78e-06 & 0.14 & 4.02e-06 & 0.12\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $P_\mu$ for 35 $ < T_\pi < $ 100 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dpmutpi1}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{100 MeV $ < T_\pi < $ 150 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+
+1500.0 - 3000.0 & 909.85e-06 & 764.82e-06 & 98.28e-06 & 0.11 & 46.83e-06 & 0.05 & 86.41e-06 & 0.10\\ \hline
+3000.0 - 4000.0 & 1863.18e-06 & 1428.41e-06 & 157.44e-06 & 0.08 & 74.70e-06 & 0.04 & 138.59e-06 & 0.07\\ \hline
+4000.0 - 5500.0 & 2195.55e-06 & 1862.63e-06 & 168.53e-06 & 0.08 & 61.84e-06 & 0.03 & 156.77e-06 & 0.07\\ \hline
+5500.0 - 7500.0 & 1367.35e-06 & 1400.38e-06 & 107.62e-06 & 0.08 & 38.95e-06 & 0.03 & 100.33e-06 & 0.07\\ \hline
+7500.0 - 10000.0 & 351.65e-06 & 312.81e-06 & 46.47e-06 & 0.13 & 16.86e-06 & 0.05 & 43.30e-06 & 0.12\\ \hline
+10000.0 - 13000.0 & 61.53e-06 & 57.15e-06 & 9.12e-06 & 0.15 & 6.41e-06 & 0.10 & 6.49e-06 & 0.11\\ \hline
+13000.0 - 20000.0 & 26.69e-06 & 19.42e-06 & 4.79e-06 & 0.18 & 3.75e-06 & 0.14 & 2.98e-06 & 0.11\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $P_\mu$ for 100 $ < T_\pi < $ 150 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dpmutpi2}
+\end{table}
+
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{150 MeV $ < T_\pi < $ 200 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+1500.0 - 3000.0 & 572.48e-06 & 653.98e-06 & 74.79e-06 & 0.13 & 43.42e-06 & 0.08 & 60.89e-06 & 0.11\\ \hline
+3000.0 - 4000.0 & 1102.82e-06 & 1226.55e-06 & 132.28e-06 & 0.12 & 70.82e-06 & 0.06 & 111.72e-06 & 0.10\\ \hline
+4000.0 - 5500.0 & 1492.15e-06 & 1607.27e-06 & 142.31e-06 & 0.10 & 61.72e-06 & 0.04 & 128.23e-06 & 0.09\\ \hline
+5500.0 - 7500.0 & 1058.67e-06 & 1193.26e-06 & 99.42e-06 & 0.09 & 43.88e-06 & 0.04 & 89.21e-06 & 0.08\\ \hline
+7500.0 - 10000.0 & 248.45e-06 & 265.46e-06 & 36.66e-06 & 0.15 & 17.40e-06 & 0.07 & 32.26e-06 & 0.13\\ \hline
+10000.0 - 13000.0 & 52.98e-06 & 52.18e-06 & 9.23e-06 & 0.17 & 7.08e-06 & 0.13 & 5.92e-06 & 0.11\\ \hline
+13000.0 - 20000.0 & 12.70e-06 & 16.22e-06 & 4.82e-06 & 0.38 & 2.73e-06 & 0.22 & 3.97e-06 & 0.31\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $P_\mu$ for 150 $ < T_\pi < $ 200 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dpmutpi4}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{200 MeV $ < T_\pi < $350 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+1500.0 - 3000.0 & 299.73e-06 & 467.58e-06 & 66.39e-06 & 0.22 & 30.41e-06 & 0.10 & 59.01e-06 & 0.20\\ \hline
+3000.0 - 4000.0 & 534.15e-06 & 935.97e-06 & 129.08e-06 & 0.24 & 45.61e-06 & 0.09 & 120.75e-06 & 0.23\\ \hline
+4000.0 - 5500.0 & 711.03e-06 & 1225.79e-06 & 151.94e-06 & 0.21 & 40.29e-06 & 0.06 & 146.50e-06 & 0.21\\ \hline
+5500.0 - 7500.0 & 451.90e-06 & 854.61e-06 & 110.16e-06 & 0.24 & 26.50e-06 & 0.06 & 106.93e-06 & 0.24\\ \hline
+7500.0 - 10000.0 & 97.89e-06 & 184.80e-06 & 32.20e-06 & 0.33 & 10.05e-06 & 0.10 & 30.60e-06 & 0.31\\ \hline
+10000.0 - 13000.0 & 20.70e-06 & 35.66e-06 & 7.40e-06 & 0.36 & 4.31e-06 & 0.21 & 6.01e-06 & 0.29\\ \hline
+13000.0 - 20000.0 & 7.84e-06 & 12.14e-06 & 3.28e-06 & 0.42 & 2.12e-06 & 0.27 & 2.50-06 & 0.32\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $P_\mu$ for 200 $ < T_\pi < $ 350 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dpmutpi5}
+\end{table}
+
+%=============tpi vs ptmu
+
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{0 MeV $ < P^T_\mu < $ 270 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 4966.25e-06 & 4483.49e-06 & 569.00e-06 & 0.11 & 193.91e-06 & 0.04 & 534.94e-06 & 0.11\\ \hline
+100.0 - 150.0 & 5397.05e-06 & 5598.28e-06 & 437.14e-06 & 0.08 & 167.32e-06 & 0.03 & 403.85e-06 & 0.08\\ \hline
+150.0 - 350.0 & 1834.44e-06 & 2675.12e-06 & 205.83e-06 & 0.11 & 67.06e-06 & 0.04 & 194.6e-06 & 0.11\\ \hline
+
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 0 $ < P^T_\mu < $ 270 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpiptmu1}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{270 MeV $ < P^T_\mu < $ 420 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 16112.20e-06 & 13119.47e-06 & 1634.90e-06 & 0.1 & 612.91e-06 & 0.04 & 1515.70e-06 & 0.09\\ \hline
+100.0 - 150.0 & 14230.06e-06 & 12695.18e-06 & 918.78e-06 & 0.065 & 439.52e-06 & 0.03 & 806.83e-06 & 0.06\\ \hline
+150.0 - 350.0 & 4252.43e-06 & 6674.57e-06 & 534.85e-06 & 0.13 & 169.80e-06 & 0.04 & 507.18e-06 & 0.12\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 270 $ < P^T_\mu < $ 420 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpiptmu2}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{420 MeV $ < P^T_\mu < $ 600 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 18333.68e-06 & 15616.60e-06 & 1989.00e-06 & 0.11 & 691.62e-06 & 0.04 & 1864.90e-06 & 0.10\\ \hline
+100.0 - 150.0 & 14886.10e-06 & 12963.16e-06 & 1183.60e-06 & 0.08 & 475.80e-06 & 0.03 & 1083.80e-06 & 0.07\\ \hline
+150.0 - 350.0 & 5499.74e-06 & 8744.55e-06 & 827.11e-06 & 0.15 & 220.97e-06 & 0.04 & 797.05e-06 & 0.14\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 420 $ < P^T_\mu < $ 600 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpiptmu3}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{600 MeV $ < P^T_\mu < $ 800 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 13882.74e-06 & 11821.25e-06 & 1841.80e-06 & 0.13 & 642.75e-06 & 0.05 & 1726.00e-06 & 0.12\\ \hline
+100.0 - 150.0 & 11749.46e-06 & 9380.17e-06 & 1126.30e-06 & 0.10 & 452.21e-06 & 0.04 & 1031.50e-06 & 0.09\\ \hline
+150.0 - 350.0 & 5841.83e-06 & 7703.12e-06 & 985.40e-06 & 0.17 & 260.31e-06 & 0.05 & 950.40e-06 & 0.16\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 600 $ < P^T_\mu < $ 800 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpiptmu4}
+\end{table}
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{800 MeV $ < P^T_\mu < $ 2000 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 2188.55e-06 & 1719.46e-06 & 334.05e-06 & 0.15 & 124.06e-06 & 0.06 & 310.16e-06 & 0.14\\ \hline
+100.0 - 150.0 & 1863.94e-06 & 1361.284-06 & 265.50e-06 & 0.14 & 93.49e-06 & 0.05 & 248.50e-06 & 0.13\\ \hline
+150.0 - 350.0 & 1201.02e-06 & 1270.76e-06 & 287.64e-06 & 0.24 & 66.28e-06 & 0.06 & 279.90e-06 & 0.23\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 800 $ < P^T_\mu < $ 2000 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpiptmu5}
+\end{table}
+
+
+
+%=============tpi vs enu=======
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{0 MeV $ < E_\nu < $ 4500 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 706.50e-06 & 595.48e-06 & 98.36e-06 & 0.14 & 29.08e-06 & 0.04 & 93.96e-06 & 0.13\\ \hline
+100.0 - 150.0 & 669.23e-06 & 538.88e-06 & 64.57e-06 & 0.10 & 21.02e-06 & 0.03 & 61.06e-06 & 0.09\\ \hline
+150.0 - 200.0 & 421.11e-06 & 456.95e-06 & 49.04e-06 & 0.12 & 20.58e-06 & 0.05 & 44.51e-06 & 0.11\\ \hline
+200.0 - 350.0 & 181.25e-06 & 316.07e-06 & 39.05e-06 & 0.22 & 12.67e-06 & 0.07 & 36.94e-06 & 0.20\\ \hline
+
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 0 $ < E_\nu < $ 4500 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpienu1}
+\end{table}
+
+
+\begin{table}[!htb]
+    \centering
+    \tiny
+    \begin{tabular}{|c|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|p{0.5in}|}
+
+        \hline
+        \multicolumn{9}{c}{4500 MeV $ < E_\nu < $ 20000 MeV}\\
+        \hline
+        Bin (MeV)& Data $\sigma$ & MC $\sigma$ & Total Unc. (Abs) & Total Unc. (Frac)  & Stat. Unc. (Abs) & Stat. Unc. (Frac) & Sys. Unc. (Abs) & Sys. Unc. (Frac)\\ \hline
+35.0 - 100.0 & 583.63e-06 & 498.68e-06 & 56.16e-06 & 0.10 & 12.64e-06 & 0.02 & 54.72e-06 & 0.09\\ \hline
+100.0 - 150.0 & 479.61e-06 & 440.49e-06 & 33.62e-06 & 0.07 & 8.93e-06 & 0.02 & 32.41e-06 & 0.07\\ \hline
+150.0 - 200.0 & 343.71e-06 & 379.12e-06 & 32.13e-06 & 0.09 & 9.64e-06 & 0.03 & 30.65e-06 & 0.09\\ \hline
+200.0 - 350.0 & 159.98e-06 & 284.61e-06 & 36.41e-06 & 0.23 & 6.16e-06 & 0.04 & 35.88e-06 & 0.22\\ \hline
+
+    \end{tabular}
+    \caption{Double differential cross section measured in $T_\pi$ for 0 $ < E_\nu < $ 150 MeV. Absolute and fractional uncertainties for total, statistical and total systematic errors are shown. Units for non-fractional quantities are $10^{-42}cm^2/MeV*MeV/nucleon$.}
+    \label{tab:ApdxA:XSecTable2Dtpienu2}
+\end{table}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

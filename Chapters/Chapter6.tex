@@ -18,11 +18,11 @@ In the following sections, a description of the systematic uncertainties and the
 \section{Systematic Uncertainties}
 \label{Cap:ErrorAnalysis:SystematicUnc}
 
-In this section, the systematic uncertainties are described and and grouped depending on the nature of these. At the end of each subsection, some examples of the group uncertainties are given.
+In this section, the systematic uncertainties are described and grouped depending on the nature of these. At the end of each subsection, some examples of the group uncertainties are given.
 
 \subsection{Cross Section Models}
 \label{Cap:ErrorAnalysis:SystematicUnc:GenieIntMod}
-This group includes uncertainties about the GENIE v2.12.6 interaction models. In the GENIE models, there are parameters that have an associated error. These fall into the vertical systematic uncertainties category. Depending on the type of interaction, there are different knobs that can be modified. In the \textbf{Table} the the parameters with their variations are briefly described. In the \textbf{Tables} \ref{tab:ErrorAnalysis:SystematicUnc:GenieElastic}-\ref{tab:ErrorAnalysis:SystematicUnc:GenieDISmodels} the uncertainty parameters are described. 
+This group includes uncertainties about the GENIE v2.12.6 interaction models. In the GENIE models, there are parameters that have an associated error. These fall into the vertical systematic uncertainties category. Depending on the type of interaction, there are different knobs that can be modified. In the \textbf{Table} the parameters with their variations are briefly described. In the \textbf{Tables} \ref{tab:ErrorAnalysis:SystematicUnc:GenieElastic}-\ref{tab:ErrorAnalysis:SystematicUnc:GenieDISmodels} the uncertainty parameters are described. 
 
 The elastic NC interactions are described in GENIE by the Ahrens model \cite{Ahrens:PhysRevD.35.785} detailed in \ref{Cap:Simulation:GENIE}. The $M_A=1.032\pm0.036$ GeV and $\eta=0.12$ parameters of the Ahrens model are shifted. Due to the high efficiency of the cuts to remove NC interactions, these systematic uncertainties have no effect during the measurement. In the \textbf{Table} \ref{tab:ErrorAnalysis:SystematicUnc:GenieElastic} the parameters and the fractional uncertainty effect are shown. 
 
@@ -30,7 +30,7 @@ The elastic NC interactions are described in GENIE by the Ahrens model \cite{Ahr
     \centering
     \begin{tabular}{c|p{2.5in}|c|c|c}
         \hline
-        Parameter & Description.  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
+        Parameter & Description  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
          & & & 1D & 2D \\
         \hline 
         EtaNCEL & Parameter that adjust $\eta$ in the elastic scattering  cross section model. & $\pm30\%$ & $\sim0\%$ & $\sim0\%$ \\ \hline
@@ -46,13 +46,13 @@ GENIE uses the Llewellyn-Smith model to predict CC QE interactions. For this mod
     \centering
     \begin{tabular}{c|p{1.5in}|c|c|c}
         \hline 
-        Parameter & Description.  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
+        Parameter & Description  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
          & & & 1D & 2D \\
         \hline  
-        MaCCQE & Parameter that adjust the $M_A$ in CCQE scattering, in GENIE given by the Llewellyng-Smith model. & $\pm9\%$ & $>20\%$ & $>3.7\%$ \\ \hline
+        MaCCQE & Parameter that adjusts the $M_A$ in CCQE scattering, in GENIE given by the Llewellyng-Smith model. & $\pm9\%$ & $>20\%$ & $>3.7\%$ \\ \hline
         VecFFCCQEshape & Changes from BBBA to dipole. & Shape & $>3\%$ & $>0.5\%$ \\
         \hline
-        CCQEPauliSupViaKF & Parameter for Pauli suppression of CCQE at low $Q^2$ &$\pm30\%$ & $>0.2\%$ & $>0.4\%$ \\ \hline
+        CCQEPauliSupViaKF & Parameter for Pauli suppression of CCQE at low $Q^2$. &$\pm30\%$ & $>0.2\%$ & $>0.4\%$ \\ \hline
         
     \end{tabular}
     \caption{Uncertainty parameters modified for CCQE interactions. Table based in \cite{GENIEUnc}.}
@@ -67,13 +67,13 @@ In GENIE, the angular distribution of the pions from $\Delta$ decay is initially
     \centering
     \begin{tabular}{c|p{1.8in}|c|c|c}
         \hline 
-        Parameter & Description.  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
+        Parameter & Description  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
          & & & 1D & 2D \\
         \hline 
         MaRES & This parameter modifies the resonance production by changing the $M_A$ parameter in the RS cross section model. & $\pm5\%$ & $>6\%$ & $>2.5\%$ \\ \hline
         MvRES & This parameter modifies the resonance production by shifting the $M_V$ parameter in the RS cross section model. & $\pm3\%$ & $>4\%$ & $>1.3\%$\\ \hline
         NormNCRES & It modifies the normalization of the NC RS model. & $\pm20\%$ & $\sim 0\%$ & $\sim0\%$ \\ \hline
-        Theta\_Delta2Npi & This parameter changes from anisotropic to isotropic the pion angle distribution & \makecell{Anisotropy to \\ isotropy} & $>4\%$ & $>6.9\%$ \\ \hline
+        Theta\_Delta2Npi & This parameter changes from anisotropic to isotropic the pion angle distribution. & \makecell{Anisotropy to \\ isotropy} & $>4\%$ & $>6.9\%$ \\ \hline
     \end{tabular}
     \caption{Uncertainty parameters modified for CC and NC resonant interactions. Table based in \cite{GENIEUnc}.}
     \label{tab:ErrorAnalysis:SystematicUnc:GenieRESmodels}
@@ -85,13 +85,13 @@ The normalization of Neutral Current (NC) and Charged Current (CC) non-resonant 
     \centering
     \begin{tabular}{c|p{2.2in}|c|c|c}
         \hline 
-        Parameter & Description.  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
+        Parameter & Description & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
          & & & 1D & 2D \\
         \hline  
         Rvp1pi & Modifies the NC and CC 1$\pi$ production from non-resonant inelastic scattering for $\nu p/\Bar{\nu}n$. & $\pm4\%$ & $>2.3\%$ & $>2.3\%$\\ \hline
         Rvn1pi & Modifies the NC and CC 1$\pi$ production from non-resonant inelastic scattering for $\nu n/\Bar{\nu}p$. & $\pm4\%$ & $>2.2\%$ & $>1.2\%$\\ \hline
-        Rvp2pi & Modifies the NC and CC 1$\pi$ production from non-resonant inelastic scattering for $\nu p/\Bar{\nu}n$ & $\pm50\%$ & $>4.3\%$ & $>16.3\%$\\ \hline
-        Rvn2pi & Modifies the NC and CC 1$\pi$ production from non-resonant inelastic scattering for $\nu n/\Bar{\nu}p$ & $\pm50\%$ & $>11.7\%$ & $>13\%$\\ \hline
+        Rvp2pi & Modifies the NC and CC 1$\pi$ production from non-resonant inelastic scattering for $\nu p/\Bar{\nu}n$. & $\pm50\%$ & $>4.3\%$ & $>16.3\%$\\ \hline
+        Rvn2pi & Modifies the NC and CC 1$\pi$ production from non-resonant inelastic scattering for $\nu n/\Bar{\nu}p$. & $\pm50\%$ & $>11.7\%$ & $>13\%$\\ \hline
          
     \end{tabular}
     \caption{Parameter, shift value and a uncertainties description for DIS and hadronization models. Based on \cite{GENIEUnc}.}
@@ -105,7 +105,7 @@ The BY model predicts the NC and CC DIS events in GENIE for the region $Q^2 > 1\
     \centering
     \begin{tabular}{c|p{2.1in}|c|c|c}
         \hline 
-        Parameter & Description.  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
+        Parameter & Description  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
          & & & 1D & 2D \\
         \hline  
         AhtBY & $A_{TH}$ parameter of the Bodek-Yang model. & $\pm25\%$ & $>5.5\%$ & $>0.2\%$\\ \hline
@@ -118,19 +118,19 @@ The BY model predicts the NC and CC DIS events in GENIE for the region $Q^2 > 1\
     \label{tab:ErrorAnalysis:SystematicUnc:GenieDISmodels}
 \end{table}
 
-There are types of interaction or effects that are not modeled in GENIE. In the MINER$\nu$A experiment, the analyzer has developed studies to include interactions or nuclear effects that are not included in GENIE comparing the predictions with data. Those studies give as a result the application of a weight to the simulation increasing or decreasing the number of events, but these have an uncertainty associated. The \textbf{Tables} \ref{tab:ErrorAnalysis:SystematicUnc:CoherentandDifractive} and \ref{tab:ErrorAnalysis:SystematicUnc:MnvTune} show the parameter, description, and the effect of these uncertainties in the cross section.
+There are types of interaction or effects that are not modeled in GENIE. In the MINER$\nu$A experiment, the analyzer has developed studies to include interactions or nuclear effects that are not included in GENIE comparing the predictions with data. Those studies give as a result the application of an weight to the simulation increasing or decreasing the number of events, but these have an uncertainty associated. The \textbf{Tables} \ref{tab:ErrorAnalysis:SystematicUnc:CoherentandDifractive} and \ref{tab:ErrorAnalysis:SystematicUnc:MnvTune} show the parameter, description, and the effect of these uncertainties in the cross section.
 
 \begin{table}[!htb]
     \centering
     \begin{tabular}{c|p{2in}|c|c|c}
         \hline 
-        Parameter & Description.  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
+        Parameter & Description & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
          & & & 1D & 2D \\
         \hline  
-        CoherentPiUnc\_CH & Normalization to coherent pion production in plastic scintillator & $\pm20\%$ & $>2.5\%$ & $>5.3\%$\\ \hline
-        DiffractiveModelUnc & Normalization to the diffractive pion production. & $\pm50\%$ & $>1.7\%$ & $>4\%$ \\ \hline 
+        CoherentPiUnc\_CH & Normalization to coherent pion production in plastic scintillator. & $\pm20\%$ & $>2.5\%$ & $>5.3\%$\\ \hline
+        DiffractiveModelUnc & Normalization to the diffractive pion production & $\pm50\%$ & $>1.7\%$ & $>4\%$ \\ \hline 
     \end{tabular}
-    \caption{These parameters modifies the weight applied to the coherent events in scintillator and the diffractive pion production. These weights affect mainly to the $W_{exp}$ and $\theta_\mu$ variables.}
+    \caption{These parameters modifies the weight applied to the coherent events in scintillator and the diffractive pion production. These weights affect mainly the $W_{exp}$ and $\theta_\mu$ variables.}
     \label{tab:ErrorAnalysis:SystematicUnc:CoherentandDifractive}
 \end{table}
 
@@ -138,10 +138,10 @@ There are types of interaction or effects that are not modeled in GENIE. In the 
     \centering
     \begin{tabular}{c|p{2in}|c|c}
         \hline 
-        Parameter & Description.  & \multicolumn{2}{c}{Effect} \\
+        Parameter & Description  & \multicolumn{2}{c}{Effect} \\
          & & 1D & 2D \\
         \hline  
-        Low\_Recoil\_2p2h & This parameter modifies the weight applied to simulate the effect of the 2p2h interactions & $>5.5\%$ & $>1.3\%$ \\ \hline
+        Low\_Recoil\_2p2h & This parameter modifies the weight applied to simulate the effect of the 2p2h interactions. & $>5.5\%$ & $>1.3\%$ \\ \hline
         RPA\_HighQ2 & RPA suppression parameter for the high $Q^2$ ($Q^2 > 0.5\ GeV^2$) region. For these regions, all the parameters of the particle-hole potential are shifted 1$\sigma$ and the effects are summed in quadrature. & $>6\%$ & $>1.4\%$ \\ \hline
         RPA\_LowQ2 & RPA suppression shift for the low $Q^2$ region ($Q^2 < 0.5\ GeV^2$), In this region the uncertainty is based on muon capture. & $>2\%$ & $>0.3\%$ \\ \hline 
     \end{tabular}
@@ -152,21 +152,21 @@ There are types of interaction or effects that are not modeled in GENIE. In the 
 
 
 \pagebreak
-\subsection{Genie FSI Models}
+\subsection{GENIE FSI Models}
 \label{Cap:ErrorAnalysis:SystematicUnc:GenieFSINucleons}
-In the previous section, various sources of uncertainties were presented that stem from neutrino interaction models. Following the vertex interaction, numerous interactions can occur before the particles exit the nucleus; these are known as Final State Interactions (FSI). All these effects are simulated as best as possible. The processes that can modify the final-state particles include absorption, charge exchange, elastic, and inelastic scattering. Another parameter that is included is the Mean Free Path (MFP), which is the mean distance that a particle travels before interacting inside the nucleus. These parameters are calculated for the pion and the nucleon. This section describes the uncertainties associated with these models. The \textbf{Tables} \ref{tab:ErrorAnalysis:SystematicUnc:FSIN} and \ref{tab:ErrorAnalysis:SystematicUnc:FSIPi}show the different knobs that are shifted to obtain the propagation of uncertainty from these models. 
+In the previous section, various sources of uncertainties were presented that stem from neutrino interaction models. Following the vertex interaction, numerous interactions can occur before the particles exit the nucleus; these are known as Final State Interactions (FSI). All these effects are simulated as best as possible. The processes that can modify the final-state particles include absorption, charge exchange, elastic, and inelastic scattering. Another parameter that is included is the Mean Free Path (MFP), which is the mean distance that a particle travels before interacting inside the nucleus. These parameters are calculated for the pion and the nucleon. This section describes the uncertainties associated with these models. The \textbf{Tables} \ref{tab:ErrorAnalysis:SystematicUnc:FSIN}  and \ref{tab:ErrorAnalysis:SystematicUnc:FSIPi}show the different knobs that are shifted to obtain the propagation of uncertainty from these models. 
 
 \begin{table}[!htb]
     \centering
     \begin{tabular}{c|p{2in}|c|c|c}
         \hline 
-        Parameter & Description.  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
+        Parameter & Description  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
          & & & 1D & 2D \\
         \hline  
-        RDecBR1gamma & Modifies the resonance decay to a photon branching ration, eg $\Delta(1232)\rightarrow p + \gamma$& $\pm50\%$ & $>0.09\%$ & $>0.04\%$\\ \hline
+        RDecBR1gamma & Modifies the resonance decay to a photon branching ration, eg $\Delta(1232)\rightarrow p + \gamma$. & $\pm50\%$ & $>0.09\%$ & $>0.04\%$\\ \hline
         FrPiProd\_pi & Modifies the pion production probability for pions, considering total probability of re-scattering. & $\pm20\%$ & $>0.4\%$ & $>0.5\%$ \\ \hline
         AGKYxF1pi & This parameter modifies the $x_F$ distribution. Changes the pion kinematics for nucleon-pion interactions for low multiplicity DIS events from the AGKY hadronization model.  & $\pm20\%$ & $>2.4\%$ & $>1.6\%$\\ \hline
-        MFP\_pi & Modifies the MFP for the pions & $\pm20\%$ & $>8.8\%$ & $>10.5\%$\\ \hline
+        MFP\_pi & Modifies the MFP for the pions. & $\pm20\%$ & $>8.8\%$ & $>10.5\%$\\ \hline
         FrAbs\_pi & Modifies the probability of pion absorption, considering the total probability of re-scattering. & $\pm30\%$ & $>6.7\%$ & $>6.7\%$ \\ \hline 
         FrCex\_pi & Modifies the charge exchange probability for pions, considering the total probability of re-scattering. & $\pm50\%$ & $>0.5\%$ & $>2\%$\\ \hline
         FrElas\_pi & Modifies the elastic scattering probability for pions, considering the total probability of re-scattering. & $\pm10\%$ & $>2.7\%$ & $>0.9\%$ \\ \hline
@@ -182,11 +182,11 @@ In the previous section, various sources of uncertainties were presented that st
     \centering
     \begin{tabular}{c|p{2in}|c|c|c}
         \hline 
-        Parameter & Description.  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
+        Parameter & Description  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
          & & & 1D & 2D \\
         \hline  
         FrPiProd\_N & This knob modifies the pion production probability for nucleons, taking into account the total probability of re-scattering. & $\pm20\%$ & $>2\%$ & $>1.3\%$\\ \hline
-        MFP\_N & Parameter that modifies the MFP for the nucleon & $\pm20\%$ & $>7.2\%$ & $>2.9\%$ \\ \hline
+        MFP\_N & Parameter that modifies the MFP for the nucleon. & $\pm20\%$ & $>7.2\%$ & $>2.9\%$ \\ \hline
         FrAbs\_N & Modifies the nucleon fates-absorption, It alters the probability of nucleon absorption, taking into account the probability of re-scattering. & $\pm30\%$ & $>1.7\%$ & $>4\%$ \\ \hline
         FrCEx\_N & Modifies the charge exchange probability for nucleons, considering the total probability of re-scattering. & $\pm50\%$ & $>1.6\%$ & $>1\%$\\ \hline
         FrElas\_N & Modifies the elastic scattering probability for nucleons, considering the total probability of re-scattering. & $\pm30\%$ & $>2.5\%$ & $>1.7\%$ \\ \hline
@@ -209,18 +209,18 @@ In the 1D analysis, the variables that are more affected by these uncertainties 
     \centering
     \begin{tabular}{c|p{2in}|c|c}
         \hline 
-        Parameter & Description.  & \multicolumn{2}{c}{Effect} \\
+        Parameter & Description  & \multicolumn{2}{c}{Effect} \\
          & & 1D & 2D \\
         \hline  
-        BeamAngle & Neutrino beam angle. 1$\sigma$ $\pm0.1$ mrad & $>3.4\%$ & $>4.3\%$\\ \hline
+        BeamAngle & Neutrino beam angle. 1$\sigma$ $\pm0.1$ mrad. & $>3.4\%$ & $>4.3\%$\\ \hline
         BeamAngleX & Neutrino beam angle with respect to the X-axis. $1\sigma\ \pm0.1$ mrad. & $>1.6\%$ & $>3\%$ \\ \hline
-        BeamAngleY & Neutrino beam respect the Y-axis. $1\sigma\ \pm0.1$ mrad & $>5.1\%$ & $>3.6\%$ \\ \hline
-        MINOS\_Reconstruction\_Efficiency & This shift the muon energy by $\pm0.004\%$ & $>5\%$ & $>4.2\%$\\ \hline
+        BeamAngleY & Neutrino beam respect the Y-axis. $1\sigma\ \pm0.1$ mrad. & $>5.1\%$ & $>3.6\%$ \\ \hline
+        MINOS\_Reconstruction\_Efficiency & This shift the muon energy by $\pm0.004\%$. & $>5\%$ & $>4.2\%$\\ \hline
         MuonAngleXResolution & The muon angle resolution in the component X. $1\sigma \pm0.002$ rad.  & $>0.4\%$ & $>1.7\%$ \\ \hline
         MuonAngleYResolution & The muon angle resolution in the component Y. $1\sigma \pm0.002$ rad. & $>0.3\%$ & $>1\%$ \\ \hline
-        Muon\_Energy\_MINERvA & Muon energy uncertainty on MINER$\nu$A. $1\sigma\ \pm17$ Mev & $>7.7\%$ & $>14.8\%$\\ \hline
-        Muon\_Energy\_MINOS & MINOS energy muon uncertainty. $1\sigma\ \pm0.6\%$  & $>12.5\%$ & $>15\%$ \\ \hline
-        Muon\_Energy\_Resolution & Muon energy resolution uncertainty. $1\sigma\ \pm0.004\%$ & $>2.4\%$ & $>1.2\%$ \\ \hline
+        Muon\_Energy\_MINERvA & Muon energy uncertainty on MINER$\nu$A. $1\sigma\ \pm17$ Mev. & $>7.7\%$ & $>14.8\%$\\ \hline
+        Muon\_Energy\_MINOS & MINOS energy muon uncertainty. $1\sigma\ \pm0.6\%$.  & $>12.5\%$ & $>15\%$ \\ \hline
+        Muon\_Energy\_Resolution & Muon energy resolution uncertainty. $1\sigma\ \pm0.004\%$. & $>2.4\%$ & $>1.2\%$ \\ \hline
     \end{tabular}
     \caption{The systematic uncertainty description for muon kinematics reconstruction and the effect of it in the cross section results are shown. Based on \cite{AmitBashyal:2021tzd}.}
     \label{tab:ErrorAnalysis:SystematicUnc:Muon}
@@ -232,20 +232,20 @@ In the 1D analysis, the variables that are more affected by these uncertainties 
 \subsection{Pion Reconstruction}
 \label{Cap:ErrorAnalysis:SystematicUnc:PionReco}
 
-The reconstruction of the hadrons candidates produced by the neutrino interactions is based on models that describe how these particles deposit energy in the detector mean while these pass throughout it, usually called $\frac{dE}{dX}$, these models are described in \ref{Cap:MnvExp:MnvDetector:DataReconstruction}. These models and experimental results of the test beam allow one to measure the deposited energy of the particle and hypothesize about the identity of the particle. All these models and measurements have an associated uncertainty; hence these have to be included in the error propagation calculation. In this analysis in particular, the michel electrons are used to identify if the event corresponds to a pion event and the number of pions, specially for the 1D analysis, it is used to estimate $T_\pi$ and $\theta_\pi$, therefore, the efficiency to reconstruct the michel electrons has its own systematic error too. This section describes the uncertainties and the effects of these to the cross section results in the \textbf{Table} \ref{tab:ErrorAnalysis:SystematicUnc:PionReco}. In the 1D analysis, the discrepancy is greater for the variables $T_\pi$, $Q^2$ and $W_{exp}$. For 2D analysis, the variable combinations more affected by uncertainties are $T_\pi$ with $E_\nu$ and $T_\pi$.with $\theta_\pi$. The results of these uncertainties are reported in the\textbf{Appendix} \ref{Ap:Systematics1D:PionReconstruction}
+The reconstruction of the hadrons candidates produced by the neutrino interactions is based on models that describe how these particles deposit energy in the detector mean while these pass throughout it, usually called $\frac{dE}{dX}$, these models are described in \ref{Cap:MnvExp:MnvDetector:DataReconstruction}. These models and experimental results of the test beam allow one to measure the deposited energy of the particle and hypothesize about the identity of the particle. All these models and measurements have an associated uncertainty; hence these have to be included in the error propagation calculation. In this analysis in particular, the Michel electrons are used to identify if the event corresponds to a pion event and the number of pions, specially for the 1D analysis, it is used to estimate $T_\pi$ and $\theta_\pi$, therefore, the efficiency to reconstruct the Michel electrons has its own systematic error too. This section describes the uncertainties and the effects of these to the cross section results in the \textbf{Table} \ref{tab:ErrorAnalysis:SystematicUnc:PionReco}. In the 1D analysis, the discrepancy is greater for the variables $T_\pi$, $Q^2$ and $W_{exp}$. For 2D analysis, the variable combinations more affected by uncertainties are $T_\pi$ with $E_\nu$ and $T_\pi$.with $\theta_\pi$. The results of these uncertainties are reported in the\textbf{Appendix} \ref{Ap:Systematics1D:PionReconstruction}
 
 \begin{table}[!htb]
     \centering
     \begin{tabular}{c|p{2.8in}|c|c}
         \hline 
-        Parameter & Description.  & \multicolumn{2}{c}{Effect} \\
+        Parameter & Description  & \multicolumn{2}{c}{Effect} \\
          & & 1D & 2D \\
         \hline  
         BetheBloch & This parameter shifts the reconstructed energy, in the case of a muon 30 MeV. In the table \ref{tab:ErrorAnalysis:SystematicUnc:dEdx}it is described for the other particles.   & $>2\%$ & $>1.3\%$\\ \hline
-        Birks & Variation to the Birk's constant. $1\sigma=\pm0.014$ mm/MeV & $>7.2\%$ & $>2.9\%$ \\ \hline
-        Mass & This shift varies the detector mass an the effect of this variation in the $\frac{dE}{dx}$ & $>1.7\%$ & $>4\%$ \\ \hline
-        MichelEfficiency & Michel efficiency tagging uncertainty. $1sigma = 2.5\%$ & $>1.6\%$ & $>1\%$\\ \hline
-        NodeCutEff & Varies the deposited energy in the final hadron hits. For $T_\pi<0.15$ GeV $1\sigma=0.15\%$ and for $T_\pi > 0.15$ GeV $1\sigma=\%$ & $>2.5\%$ & $>1.7\%$ \\ \hline
+        Birks & Variation to the Birk's constant. $1\sigma=\pm0.014$ mm/MeV. & $>7.2\%$ & $>2.9\%$ \\ \hline
+        Mass & This shift varies the detector mass an the effect of this variation in the $\frac{dE}{dx}$. & $>1.7\%$ & $>4\%$ \\ \hline
+        MichelEfficiency & Michel efficiency tagging uncertainty. $1sigma = 2.5\%$. & $>1.6\%$ & $>1\%$\\ \hline
+        NodeCutEff & Varies the deposited energy in the final hadron hits. For $T_\pi<0.15$ GeV $1\sigma=0.15\%$ and for $T_\pi > 0.15$ GeV $1\sigma=1\%$. & $>2.5\%$ & $>1.7\%$ \\ \hline
         TrackAngle & It is calculated for the angles of the pion and muon. It is calculated by multiplying the angle resolution by a random number from a Gaussian distribution. Muon resolution = 0.002 rad, pion resolution=5 rad. & $>2.2\%$ & $>2.1\%$\\ \hline
         
     \end{tabular}
@@ -289,7 +289,7 @@ To simulate flux uncertainties, 100 universes with different fluxes are generate
 \begin{figure}[!htb]
     \centering
     \includegraphics[scale=0.4]{Figures/Chapter6/BeamUncertainties.png}
-    \caption{Flux uncertainty breakdown as function of the neutrino energy. The ppfx1\_Total is the total uncertainties produced by the hadron production parameters and the total beam focusing uncertainty. Frigure from \cite{BenThesis}}
+    \caption{Flux uncertainty breakdown as function of the neutrino energy. The ppfx1\_Total is the total uncertainties produced by the hadron production parameters and the total beam focusing uncertainty. Figure from \cite{BenThesis}.}
     \label{fig:Systematics:FluxUncertainties}
 \end{figure} 
 
@@ -298,29 +298,31 @@ The flux uncertainties are one of the biggest components of the total uncertaint
 \subsection{Others}
 \label{Cap:ErrorAnalysis:SystematicUnc:Others}
 
-This group of uncertainties includes the uncertainties related to the target mass, particle response, and the GEANT4 uncertainties. The target mass shifts the density of the material, it changes the deposited energy in the detector. The particle response uncertainties gives information about the calorimetric energy response of the detector, and this is specific for each particle. The GEANT4 uncertainties are related to the models that are used to simulate the trajectory of the particles produced in the neutrino interaction and the secondary interactions of the particles in the detector. The
+This group of uncertainties includes uncertainties related to the target mass, particle response, and GEANT4 uncertainties. 
 
-\textcolor{red}{Correr el codigo para obtener el error de GEANT4}
+The target mass shifts the density of the material, it has an effect on dE/dx reconstruction, particle identification reconstruction, and the calculation of the number of targets in the detector. For these analyses, it only shifts the mass density of the plastic scintilator situated in the tracker region.  
 
+The particle response uncertainties shift the calorimetric energy response of the detector. It is specific for each particle. The sources of the variations effects for different sources such as calibration, Geant4 model, etc. These uncertainties were measured using data from the Miner$\nu$A testbeam detector\cite{TestBeamPion}\cite{TestBeamProton}. The response was measured using a beam of protons, pions, and electrons with a well-known energy. This uncertainty affects the reconstructed recoil energy, which is used to estimate the hadronic energy and other variables such as $W_{exp}$, $Q^2$ and $E_\nu$.
 
+The GEANT4 uncertainties are related to the models that are used to simulate the trajectory inside the detector and the secondary inelastic interactions of the particles in the detector. Initially, these effects are not included in the simulation; therefore, an weight is applied to simulate these effects, reducing or increasing the probability of the secondary inelastic interactions. 
 
 \begin{table}[!htb]
     \centering
     \begin{tabular}{c|p{2in}|c|c|c}
         \hline 
-        Parameter & Description.  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
+        Parameter & Description  & Shift (1 $\sigma$) & \multicolumn{2}{c}{Effect} \\
          & & & 1D & 2D \\
         \hline  
-        GEANT\_Neutron & & $\pm20\%$ & $>1\%$ & $>1.3\%$\\ \hline
-        GEANT\_Pion &  & $\pm20\%$ & $>2.5\%$ & $>2.9\%$ \\ \hline
-        GEANT\_Proton &  & $\pm30\%$ & $>0.5\%$ & $>4\%$ \\ \hline
-        Target\_Mass\_CH &  & $\pm50\%$ & $>1.5\%$ & $>0.002\%$\\ \hline
-        response\_em &  & $\pm30\%$ & $>0.25\%$ & $>1.6\%$ \\ \hline
-        response\_meson &  & $\pm40\%$ & $>1\%$ & $>2.2\%$\\ \hline
-        response\_other &  & $\pm40\%$ & $>1.6\%$ & $>2.7\%$\\ \hline
-        response\_proton &  & $\pm40\%$ & $>0.9\%$ & $>4.4\%$\\ \hline
+        GEANT\_Neutron & Shift the probability of secondary interactions for a neutron.  & $\pm10\%$ & $>1\%$ & $>1.3\%$\\ \hline
+        GEANT\_Pion & Shift the probability of secondary interactions for a pion. & $\pm10\%$ & $>2.5\%$ & $>2.9\%$ \\ \hline
+        GEANT\_Proton & Shift the probability of secondary interactions for a proton. & $\pm10\%$ & $>0.5\%$ & $>4\%$ \\ \hline
+        Target\_Mass\_CH & Variation of the plastic scintillator density. & $\pm1.4\%$ & $>1.5\%$ & $>0.002\%$\\ \hline
+        response\_em & It shifts the hadronical recoil energy for the production of electrons and photons. & $\pm3\%$ & $>0.25\%$ & $>1.6\%$ \\ \hline
+        response\_meson & It shifts the hadronical recoil energy for the production of mesons. & $\pm5\%$ & $>1\%$ & $>2.2\%$\\ \hline
+        response\_proton & It shifts the hadronical recoil energy for the production of protons. & $\pm3.5\%$ & $>0.9\%$ & $>4.4\%$\\ \hline
+        response\_other & It shifts the hadronical recoil energy for the production of other particles.& $\pm40\%$ & $>1.6\%$ & $>2.7\%$\\ \hline
     \end{tabular}
-    \caption{The systematic uncertainty description for the Geant4, detector response and mass detector shifts and their effect of in the cross section results are shown. }
+    \caption{The systematic uncertainty description for the Geant4, detector response and mass detector shifts and their effect in the cross section results are shown. }
     \label{tab:ErrorAnalysis:SystematicUnc:Other}
 \end{table}
 
@@ -364,7 +366,7 @@ In this section the results for the 1D and the 2D analysis systematic uncertaint
     \begin{figure}
         \centering
         \includegraphics[scale=0.3]{Figures/AppendixB/XsecUnc1D/ErrorSummary_CrossSection_\var_Frac__1Pi_.png}
-        \caption{$\NewVar$ 1D Cross Section error summary, including the statistical and systematic uncertainties breakdown per group.}
+        \caption{$\NewVar$ 1D Cross Section error summary, including the statistical and systematic uncertainties breakdown per group. Figure by the author.}
         \label{fig:Systematics:1DSystematics\var}
     \end{figure}  
 }
@@ -405,7 +407,7 @@ In this section the results for the 1D and the 2D analysis systematic uncertaint
     \begin{figure}
         \centering
         \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_\var_.png}
-        \caption{$\NewVar$ 2D Cross Section error summary, including the statistical and systematic uncertainties breakdown per group.}
+        \caption{$\NewVar$ 2D Cross Section error summary, including the statistical and systematic uncertainties breakdown per group. Figure by the author.}
         \label{fig:Systematics:2DSystematics\var}
     \end{figure}  
 }

@@ -4,22 +4,26 @@
 
 The results of the cross section measurement are presented in this chapter. The measurements report both statistical and systematic errors. The systematic errors are detailed in \textbf{Chapter} \ref{Cap:ErrorAnalysis}. Some details and observations are given in the \textbf{Sections} \ref{Cap:xSec:1DResults} and \ref{Cap:xSec:2DResults}.
 
-\section{One Differential Cross Section Results}
+\section{Single differential Cross Section Results}
 \label{Cap:xSec:1DResults}
 
-Something that must be considered for the results of $\theta_\pi$ is the different signal definition where the kinetic energy of the pion is constrained between 20 MeV and 350 MeV. The MC histograms correspond to the GENIE 2.12.6 event generator, re-weighted by the MINER$\nu$A weight MnvGENIE v4.3.1 + Pion re-weight, as explained in \textbf{Chapter} \ref{Cap:Simulation:GENIE}.
+For $E_\nu$, see \textbf{Figure} \ref{fig:Analysis:CrossSection:1DCrossSectionenu}, it is observed that the prediction and data are well matched in most parts of the bins. This is because most of the neutrino energy reconstruction comes from the muon momentum, which is generally well reconstructed because of the MINOS Near detector. However, the hadronical energy is biased for multiple reasons, which are considered in the systematic error calculation.  
 
-For $E_\nu$, it is observed that the prediction and the data match well in most parts of the bins. This is because most of the neutrino energy reconstruction comes from the muon momentum, which is generally well reconstructed because of the MINOS Near detector.
+$T_\pi$, \textbf{Figure} \ref{fig:Analysis:CrossSection:1DCrossSectionmixtpi}, does not match perfectly in most parts of the bins. The first two bins correspond to a region never reported in previous analyses. The good match between the data and the MC for the first two bins is also related to the effects of the pion reweight. The larger disagreement between the data and the simulation is observed in the fourth bin, where the data point is more than 1$\sigma$ far from the simulation.
 
-$T_\pi$ does not match perfectly in most parts of the bins. The first bin corresponds to a region never reported in previous analyses. The good match between the data and the MC for the first bins is also related to the effects of the pion reweight. The maximum of the distributions differ; the peak of simulation is located in the bin next to the right of the peak of data. 
+Something that must be considered for the results of $\theta_\pi$, \textbf{Figure} \ref{fig:Analysis:CrossSection:1DCrossSectionmixthetapi_deg}, is the different signal definition in which the kinetic energy of the pion is limited between 20 MeV and 350 MeV. The MC histograms correspond to the GENIE 2.12.6 event generator, re-weighted by the MINER$\nu$A weight MnvGENIE v4.3.1 + Pion re-weight, as explained in \textbf{Chapter} \ref{Cap:Simulation:GENIE}. In the case of $\theta_\pi$, there is observed a disagreement between the data and the simulation. The shape of the distribution is similar. The higher change of the cross section is located around 90 degrees. It is observed that the cross section is not symmetric with respect to 90 degrees. 
 
-In the case of $\theta_\pi$, most of the bins do not match the central value of the data and MC. The shape of the distribution is similar. The higher change of the cross section is located around 90 degrees. 
+$P_\mu$, see \textbf{Figure} \ref{fig:Analysis:CrossSection:1DCrossSectionpmu}, has good agreement between the data and the simulation. This is related to the good reconstruction of the muon kinematics and the fact that most of the neutrino energy is taken by the lepton, in this case a muon.
 
-The muon variables, such as $P_\mu$, $P^t_\mu$, $P^z_\mu$ and $\theta_\mu$, agree well with the data and MC. It also explains the agreement between the data and MC for the variable $E_\nu$. 
+$P^t_\mu$, see \textbf{Figure} \ref{fig:Analysis:CrossSection:1DCrossSectionptmu}, has good agreement between the shape and central value of the data and the simulation. The central values are statistically compatible in most of the bins. 
 
-In $Q^2$ the disagreement between the data and the MC increases in the low $Q^2$ region. This has also been reported in other analyses, such as \cite{Bercellie.131.011801} and \cite{Eberly:2014mra}. The shape is similar and the maximum distribution is observed in the same region.
+$P^z_\mu$, see \textbf{Figure} \ref{fig:Analysis:CrossSection:1DCrossSectionpzmu}, also shows a good agreement between the data and simulation. The peak of the cross section for the simulation is observed more to the right of the data point; however, the central values are statistically compatible. 
 
-The reported $W_{exp}$ distribution here is highly dependent on the reconstructed $E_{had}$. This variable is not easily reconstructed because of the smearing effect caused by neutral particles, which are not observed directly in the detector. It is also highly dependent on interactions inside the nucleus, which are not directly measured, also. All these effects are included in the systematic errors. The maximum observed between the bin edges 1200 MeV and 1300 MeV corresponds well to the $\Delta$ (1232) production. The results for this variable are not very reliable due to the findings of the warping studies, where the variable demonstrates that it cannot unfold.
+$\theta_\mu$, see \textbf{Figure} \ref{fig:Analysis:CrossSection:1DCrossSectionthetamu_deg}, has good agreement between the data and the simulation. The shape of the cross sections are very similar, and the largest discrepancy is observed in the last three bins. 
+
+In $Q^2$, see \textbf{Figure} \ref{fig:Analysis:CrossSection:1DCrossSectionthetamu_deg}, the disagreement between the data and the MC increases in the low $Q^2$ region. This has also been reported in other analyses, such as \cite{Bercellie.131.011801} and \cite{Eberly:2014mra}. The shape is similar and the maximum distribution is observed in the same region.
+
+The cross section reported here $W_{exp}$, see \textbf{Figure} \ref{fig:Analysis:CrossSection:1DCrossSectionwexp}, is highly dependent on the reconstructed $E_{had}$. This variable is not easily reconstructed because of the smearing effect caused by neutral particles, which are not observed directly in the detector. It is also highly dependent on interactions inside the nucleus, which are not directly measured, also. All these effects are included in the systematic errors. The maximum observed between the bin edges 1200 MeV and 1300 MeV corresponds well to the $\Delta$ (1232) production. The results for this variable are not very reliable due to the findings of the warping studies, where the variable demonstrates that it cannot unfold.
 
 
 \foreach \var in  {enu,mixtpi,mixthetapi_deg,pmu,ptmu,pzmu,thetamu_deg,q2,wexp}{
@@ -54,22 +58,38 @@ The reported $W_{exp}$ distribution here is highly dependent on the reconstructe
     \begin{figure}
         \centering
         \includegraphics[scale=0.3]{Figures/Chapter5/CrossSection/CrossSection_\var__1Pi_BWN.png}
-        \caption{$\NewVar$ 1D Cross Section .}
+        \caption{$\NewVar$ 1D Cross Section. Figure by the author.}
         \label{fig:Analysis:CrossSection:1DCrossSection\var}
     \end{figure}  
 }
+
+The bigger discrepancies between the models and the data are observed in the variables that have a larger dependency on the nonmuon variables. For variables such as $Q^2$, $E_\nu$ and $W_{exp}$ requires a good measurement of the hadronic energy, which depends on a good reconstruction of charged and neutral particles, with neutral particles being especially difficult to measure. For future measurements, it is necessary to have a better estimation of the hadronic energy adding the estimated energy of neutrons.
+
+For the reconstruction of $T_\pi$, it is necessary to have a better description of how the pions interact with the detector, especially for pions with an energy greater than 200 MeV. The $T_\pi$ weight provides a better prediction of the high and low $T_\pi$ region, see \textbf{Figure} \ref{fig:Analysis:Cuts:DataSelBreakdownTpireweight}, but lacks a physics-based explanation. Hence, it is necessary to compare with other models to have a deeper understanding about what is modulating the predictions in those regions. 
+
+Other variables that can be added to this analysis are the Adler angles \cite{S_nchez_2016}. These variables allow to take as reference system the nucleus and as Z axis the hadronic momentum. These variables provide information about the nuclear effects, which are of great importance for modeling nuclear dynamics for a massive nucleus.  
+
+There are other neutrino interaction MC generators that can be used to simulate the cross section such as NuWro \cite{juszczak2009runningnuwro}, GiBUU \cite{GiBUU}, GENIE v3 \cite{GENIE:2021npt}, etc.
+
+
 \pagebreak
 
 \section{Two Differential Cross Section Results}
 \label{Cap:xSec:2DResults}
 
-As explained in the introduction of the \ref{Cap:Analysis:Introduction}, the two differential cross section results do not include the untracked pions, and the kinetic energy is restricted for the range from 35 MeV to 350 MeV. The event generator used for this analysis is also GENIE 2.12.6 re-weighted by MnvGENIE v4.3.1, this is described in the \textbf{Chapter} \ref{Cap:Simulation:GENIE}. 
+As explained in the introduction of the Chapter \ref{Cap:Analysis:Introduction}, the two differential cross section results do not include the untracked pions, and the kinetic energy is restricted for the range from 35 MeV to 350 MeV. The event generator used for this analysis is also GENIE 2.12.6 re-weighted by MnvGENIE v4.3.1, this is described in the \textbf{Chapter} \ref{Cap:Simulation:GENIE}. 
 
-The 2D distributions where $T_\pi$ is included show an overprediction in the high $T_\pi$ region. This discrepancy is also observed in the data selection and may be attributed to the poor reconstruction of kinetic energy in this region. Such reconstruction inaccuracies could be caused by inelastic interactions of the pion with the detector. 
+For the combination of $P^t_\mu$ and $T_\pi$, see \textbf{Figures} \ref{fig:Analysis:CrossSection:2DEfficiencyptmu_vs_tpi} and \ref{fig:Analysis:CrossSection:2DEfficiencytpi_vs_ptmu}, the simulation overestimates the cross section value for values of high $T_\pi$. For most of the other bins, the simulation and data are statistically consistent. The disagreement in the last bin can be explained as an effect of a lack of understanding of the inelastic interactions of pions with the detector.
 
-The results for the combination of $P^T_\mu$ and $P^z_\mu$ generally show good agreement between the data and MC, even for bins with low statistics. This can be attributed to the good reconstruction of these variables. 
 
-The case of $T_\pi$ vs $\theta_\pi$ are not reliable, similar to the case of $W_{exp}$ in the one differential cross sections, this combination of variables can not be unfolded. 
+The results for the combination of $P^T_\mu$ and $P^z_\mu$, see \textbf{Figures} \ref{fig:Analysis:CrossSection:2DEfficiencyptmu_vs_pzmu} and \ref{fig:Analysis:CrossSection:2DEfficiencypzmu_vs_ptmu}, generally show good agreement between the data and the simulation, even for bins with low statistics. 
+
+$P_\mu$ and $T_\pi$, see \textbf{Figure} \ref{fig:Analysis:CrossSection:2DEfficiencytpi_vs_pmu} and \ref{fig:Analysis:CrossSection:2DEfficiencypmu_vs_tpi}, generally show good agreement between the data and the simulation. As observed in the other combinations with $T_\pi$, at high $T_\pi$ the simulation overestimates the cross section.  
+
+
+The cases of $T_\pi$ and $\theta_\pi$, see \textbf{Figures} \ref{fig:Analysis:CrossSection:2DEfficiencythetapi_deg_vs_tpi} and \ref{fig:Analysis:CrossSection:2DEfficiencytpi_vs_thetapi_deg},  are not reliable, similar to the case of $W_{exp}$ in single differential cross sections, this combination of variables cannot be unfolded. However, it can be observed that at high $T_\pi$ the data and the simulations do not agree well. In the same way, the pions that travel backward are underestimated. 
+
+$T_\pi$ and $E_\nu$ combinations, see \textbf{Figures} \ref{fig:Analysis:CrossSection:2DEfficiencyenu_vs_tpi} and \ref{fig:Analysis:CrossSection:2DEfficiencytpi_vs_enu}, show a good agreement between the data and the simulation. The high $T_\pi$ also shows that the simulation overestimates the cross section. The goal of the combinations of these two variables is to compare the cross sections with the previous single pion production analysis produced in MINER$\nu$A for the LE and ME eras.
 
 Something that should be highlighted from this study is that it is the first 2D analysis in MINER$\nu$A collaboration that shows the cross section as a function of hadronic variables, such as $T_\pi$ and $\theta_\pi$.
 
@@ -110,7 +130,11 @@ Something that should be highlighted from this study is that it is the first 2D 
     \begin{figure}
         \centering
         \includegraphics[scale=0.3]{Figures/Chapter5/CrossSection/2D_CrossSection_\var__BWN.png}
-        \caption{$\NewVar$ 2D Cross Section results.}
+        \caption{$\NewVar$ 2D Cross Section results. Figure by the author.}
         \label{fig:Analysis:CrossSection:2DEfficiency\var}
     \end{figure}  
 }
+
+
+
+In the 1D analysis, it is observed that the disagreement between the data and the simulation is reduced with the $T_\pi$ weight, but as explained before, it is necessary to give a physical explanation for this weight. 

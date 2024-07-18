@@ -1,0 +1,571 @@
+\chapter{Systematic Uncertainties 2D Analysis Results}
+\label{Ap:Systematics2D}
+ This appendix contains the cross section systematic error breakdown for all the categories for the 2D analysis. 
+
+\section{Cross Section Models Uncertainties}
+\label{Ap:Systematics2D:CrosSectionModels}
+
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_Cross_Section_Models_\var__BWN.png}
+        \caption{$\NewVar$ 2D Cross section model. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSection\var}
+    \end{figure}  
+}
+\clearpage
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_CCQE_\var__BWN.png}
+        \caption{$\NewVar$ 2D cross section systematic error breakdown for the CCQE models. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSectionCCQE\var}
+    \end{figure}  
+}
+\clearpage
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_Coherent-Diffractive_\var__BWN.png}
+        \caption{$\NewVar$ 2D cross section systematic error breakdown for the Coherent and Diffractive  models. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSectionCoherent\var}
+    \end{figure}  
+}
+\clearpage
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_DIS-Hadronization_\var__BWN.png}
+        \caption{$\NewVar$ 2D cross section systematic error breakdown for the DIS and hadronization models. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSectionDIS-Hadronizatio\var}
+    \end{figure}  
+}
+\clearpage
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_Elastic_\var__BWN.png}
+        \caption{$\NewVar$ 2D cross section systematic error breakdown for the Elastic interaction models. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSectionElastic\var}
+    \end{figure}  
+}
+\clearpage
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_MnvTunes_\var__BWN.png}
+        \caption{$\NewVar$ 2D cross section systematic error breakdown for the MnvTunes models. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSectionMnvTunes\var}
+    \end{figure}  
+}
+\clearpage
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_NonRESPi_\var__BWN.png}
+        \caption{$\NewVar$ 2D cross section systematic error breakdown for the no resonant pion models. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSectionNoRESpi\var}
+    \end{figure}  
+}
+\clearpage
+
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_RESPi_\var__BWN.png}
+        \caption{$\NewVar$ 2D cross section systematic error breakdown for the resonant pion models. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSectionRESpi\var}
+    \end{figure}  
+}
+\clearpage
+%\pagebreak
+
+\section{GENIE FSI Uncertainties}
+\label{Ap:Systematics2D:FSI}
+
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_GENIE_FSI_\var__BWN.png}
+        \caption{$\NewVar$ 2D cross section systematic error breakdown for the FSI models. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSectionFSI\var}
+    \end{figure}  
+}
+\clearpage
+
+%\pagebreak
+
+\section{Muon Uncertainties}
+\label{Ap:Systematics2D:Muon}
+
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_Muon_\var__BWN.png}
+        \caption{$\NewVar$ 2D cross section systematic error breakdown for the associated muon kinematics measurements. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSectionMuon\var}
+    \end{figure}  
+}
+\clearpage
+
+%\pagebreak
+
+\section{Pion Reconstruction Uncertainties}
+\label{Ap:Systematics2D:PionReconstruction}
+
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_Pion_Reconstruction_\var__BWN.png}
+        \caption{$\NewVar$ 2D cross section systematic error breakdown for the associated pion reconstruction. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSectionPionReconstruction\var}
+    \end{figure}  
+}
+\clearpage
+
+%\pagebreak
+
+\section{Flux Uncertainties}
+\label{Ap:Systematics2D:Flux}
+
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_Flux_\var__BWN.png}
+        \caption{$\NewVar$ 2D cross section systematic error breakdown for the associated to the neutrino flux. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSectionFlux\var}
+    \end{figure}  
+}
+\clearpage
+
+%\pagebreak
+
+\section{Others Uncertainties}
+\label{Ap:Systematics2D:Others}
+
+\foreach \var in  {ptmu_vs_tpi,tpi_vs_ptmu,ptmu_vs_pzmu,pzmu_vs_ptmu,tpi_vs_pmu,pmu_vs_tpi,thetapi_deg_vs_tpi,tpi_vs_thetapi_deg,enu_vs_tpi,tpi_vs_enu}{
+
+
+    \ifthenelse{\equal{\var}{pzmu_vs_ptmu}}{
+      \renewcommand{\NewVar}{P^z_\mu,P^T\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_thetapi_deg}}{
+      \renewcommand{\NewVar}{T_\pi,\theta_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_pmu}}{
+      \renewcommand{\NewVar}{T_\pi,P_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P^T_\mu, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{ptmu_vs_pzmu}}{
+      \renewcommand{\NewVar}{P^T\mu, P^z_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{thetapi_deg_vs_tpi}}{
+      \renewcommand{\NewVar}{\theta_\pi, T_\pi}
+    }{}
+    \ifthenelse{\equal{\var}{pmu_vs_tpi}}{
+      \renewcommand{\NewVar}{P_\mu, T\pi}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_ptmu}}{
+      \renewcommand{\NewVar}{T_\pi,P^T_\mu}
+    }{}
+    \ifthenelse{\equal{\var}{tpi_vs_enu}}{
+      \renewcommand{\NewVar}{T_\pi,E_\nu}
+    }{}
+    \ifthenelse{\equal{\var}{enu_vs_tpi}}{
+      \renewcommand{\NewVar}{E_\nu, T_\pi}
+    }{}
+    \begin{figure}
+        \centering
+        \includegraphics[scale=0.3]{Figures/AppendixC/2D_ErrorSummary_CrossSection_Others_\var__BWN.png}
+        \caption{$\NewVar$ 2D cross section systematic error breakdown. Figures by the author.}
+        \label{fig:AppendixC:CrossSecModel:2DCrossSectionOther\var}
+    \end{figure}  
+}
+\clearpage
+
